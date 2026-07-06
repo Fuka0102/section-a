@@ -1,0 +1,17 @@
+{
+  "name": "cocoon-child-master",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cocoon子テーマ（TABICO LP）のSassビルド環境",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  }
+}
