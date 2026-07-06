@@ -1,0 +1,8 @@
+@use "variables" as v;
+
+// SP（768px以下）向けスタイルを記述するためのmixin
+@mixin sp {
+  @media screen and (max-width: v.$breakpoint-sp) {
+    @content;
+  }
+}
