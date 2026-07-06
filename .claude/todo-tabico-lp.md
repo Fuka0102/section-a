@@ -6,7 +6,7 @@
 
 - [x] `package.json` 作成（gulp / gulp-sass / sass / rename / plumber を追加）
 - [x] `gulpfile.js` 作成（`scss/lp/lp.scss` → `css/lp.css`、watchタスクも用意。親テーマ `cocoon-master/gulpfile.js` の構成を踏襲）
-- [ ] `scss/lp/_variables.scss`（色・フォント・768pxブレークポイント用の値を定義）
+- [x] `scss/lp/_variables.scss`（色・フォント・768pxブレークポイント用の値を定義）
 - [ ] `scss/lp/_mixins.scss`（`@mixin sp { @media screen and (max-width: 768px) { @content; } }`）
 - [ ] `npm install` → `npx gulp` で `css/lp.css` が生成されることを確認
 

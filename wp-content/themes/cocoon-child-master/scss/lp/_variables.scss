@@ -1,0 +1,23 @@
+// TABICO LP用の変数定義
+// 色・フォントの値はFigmaデザイン（get_design_context/get_screenshotで取得した実測値）を基準にしている。
+// 個別セクション固有の色（ヒーロー背景、イラスト配色など）は各コンポーネントscss側で
+// Figma確認のうえ随時追加すること。
+
+// カラー
+$color-orange: #f4a12d; // CTAボタン背景
+$color-blue-dark: #1d5d9b; // Premium見出し・アクセントの濃い青
+$color-blue-primary: #70a5ff; // Free見出し・下線アクセントの青
+$color-blue-light: #8dddff; // 吹き出し背景の水色
+$color-yellow-accent: #f5c076; // STEPカード内の下線アクセント
+$color-text: #141414; // 本文の基本色
+$color-white: #fff;
+$color-row-odd: rgba(255, 255, 255, 0.2); // 料金比較表の奇数行背景
+$color-row-even: rgba(215, 215, 215, 0.2); // 料金比較表の偶数行背景
+
+// フォント
+$font-shippori-mincho: "Shippori Mincho", serif; // CTAボタン等の見出し
+$font-noto-sans-jp: "Noto Sans JP", sans-serif; // 本文
+$font-din: "DIN 2014", sans-serif; // カード見出し・STEP数字
+
+// ブレークポイント
+$breakpoint-sp: 768px;
