@@ -41,3 +41,6 @@ local-xdebuginfo.php
 .DS_Store
 Thumbs.db
 *.log
+
+# npm依存パッケージ（package.jsonから復元可能なため管理不要）
+/wp-content/themes/cocoon-child-master/node_modules/
