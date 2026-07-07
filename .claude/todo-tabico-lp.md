@@ -12,8 +12,8 @@
 
 ## 2. functions.php
 
-- [ ] LP専用アセット（`css/lp.css` / `js/lp/faq-accordion.js`）を `is_front_page() || is_page_template([...])` の条件で `wp_enqueue_style`/`wp_enqueue_script`
-- [ ] 同条件でCocoon標準のフロントCSS/JSを `wp_dequeue_style`/`wp_dequeue_script`
+- [x] LP専用アセット（`css/lp.css` / `js/lp/faq-accordion.js`）を `is_front_page() || is_page_template([...])` の条件で `wp_enqueue_style`/`wp_enqueue_script`
+- [x] 同条件でCocoon標準のフロントCSS/JSを `wp_dequeue_style`/`wp_dequeue_script`
 
 ## 3. 共通コンポーネント（3ページ共通）
 
