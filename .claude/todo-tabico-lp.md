@@ -17,7 +17,7 @@
 
 ## 3. 共通コンポーネント（3ページ共通）
 
-- [ ] `template-parts/lp/header.php` + `scss/lp/components/_header.scss`（グロナビ、SPはハンバーガーメニュー）
+- [x] `template-parts/lp/header.php` + `scss/lp/components/_header.scss`（グロナビ、SPはハンバーガーメニュー）
 - [x] `scss/lp/components/_button.scss`（CTAボタン：角丸オレンジ。グラデーションテキストは白文字ベタ塗りに簡略化）
 - [ ] `template-parts/lp/cta.php` + `scss/lp/components/_cta-section.scss`（「さぁTABICOで計画しよう」）
 - [ ] `template-parts/lp/footer.php` + `scss/lp/components/_footer.scss`
