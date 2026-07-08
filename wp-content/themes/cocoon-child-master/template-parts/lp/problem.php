@@ -8,10 +8,10 @@ if ( !defined( 'ABSPATH' ) ) exit;
 $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
 ?>
 <section class="lp-problem">
-  <div class="lp-problem__heading">
-    <p class="lp-problem__eyebrow">PROBLEM</p>
-    <h2 class="lp-problem__title">旅行計画、こんなことで困ってない？</h2>
-  </div>
+  <?php get_template_part( 'template-parts/lp/partials/section-heading', null, array(
+    'eyebrow' => 'PROBLEM',
+    'title'   => '旅行計画、こんなことで困ってない？',
+  ) ); ?>
 
   <div class="lp-problem__scene">
     <div class="lp-problem__illustration">

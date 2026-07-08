@@ -1,0 +1,31 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.lp-section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.lp-section-heading__eyebrow {
+  display: inline-block;
+  border-bottom: 4px solid v.$color-yellow-accent;
+  padding-bottom: 8px;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 24px;
+  color: v.$color-yellow-accent;
+}
+
+.lp-section-heading__title {
+  font-family: v.$font-shippori-mincho;
+  font-weight: 600;
+  font-size: 48px;
+  color: v.$color-text;
+
+  @include m.sp {
+    font-size: 28px;
+  }
+}

@@ -9,10 +9,10 @@ $lp_cta_image_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
 ?>
 <section class="lp-cta">
   <div class="lp-cta__inner">
-    <div class="lp-cta__heading">
-      <p class="lp-cta__eyebrow">Let’s create our plan!</p>
-      <h2 class="lp-cta__title">さぁTABICOで計画しよう</h2>
-    </div>
+    <?php get_template_part( 'template-parts/lp/partials/section-heading', null, array(
+      'eyebrow' => 'Let’s create our plan!',
+      'title'   => 'さぁTABICOで計画しよう',
+    ) ); ?>
     <p class="lp-cta__body">
       旅行の計画が決まったら、そのままプレミアムへ。<br>
       大切な旅だから、もっと自由に使いたい人のために。

@@ -7,35 +7,6 @@
   padding: 80px 20px;
 }
 
-.lp-problem__heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  text-align: center;
-}
-
-.lp-problem__eyebrow {
-  display: inline-block;
-  border-bottom: 4px solid v.$color-yellow-accent;
-  padding-bottom: 8px;
-  font-family: v.$font-noto-sans-jp;
-  font-weight: 700;
-  font-size: 24px;
-  color: v.$color-yellow-accent;
-}
-
-.lp-problem__title {
-  font-family: v.$font-shippori-mincho;
-  font-weight: 600;
-  font-size: 48px;
-  color: v.$color-text;
-
-  @include m.sp {
-    font-size: 28px;
-  }
-}
-
 // PC: Figmaの散らばり配置をシーン全体に対する%座標で再現
 .lp-problem__scene {
   position: relative;
