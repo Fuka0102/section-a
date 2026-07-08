@@ -1,0 +1,229 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.lp-about-modes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.lp-about-modes__intro {
+  margin-top: 48px;
+  text-align: center;
+  font-family: v.$font-noto-sans-jp;
+  font-size: 20px;
+  line-height: 1.7;
+  color: v.$color-text;
+
+  @include m.sp {
+    font-size: 15px;
+  }
+}
+
+// PLAN/ARRANGEモード紹介・機能紹介ページで共通利用する画像＋テキスト交互レイアウト
+.lp-feature-row {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 80px;
+
+  @include m.sp {
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 48px;
+  }
+}
+
+.lp-feature-row--reverse {
+  flex-direction: row-reverse;
+
+  @include m.sp {
+    flex-direction: column;
+  }
+}
+
+.lp-feature-row__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.lp-feature-row__heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 124px;
+
+  @include m.sp {
+    min-height: 64px;
+  }
+}
+
+.lp-feature-row__number {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: v.$font-din;
+  font-size: 180px;
+  font-weight: 600;
+  line-height: 1;
+  color: rgba(112, 213, 255, 0.5);
+
+  @include m.sp {
+    font-size: 72px;
+  }
+}
+
+.lp-feature-row__mode-title {
+  position: relative;
+  margin-left: 52px;
+  color: v.$color-blue-dark;
+
+  @include m.sp {
+    margin-left: 40px;
+  }
+}
+
+.lp-feature-row__mode-title-en {
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 64px;
+
+  @include m.sp {
+    font-size: 28px;
+  }
+}
+
+.lp-feature-row__mode-title-ja {
+  margin-left: 8px;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 24px;
+
+  @include m.sp {
+    font-size: 16px;
+  }
+}
+
+.lp-feature-row__description {
+  margin-top: 24px;
+  font-family: v.$font-noto-sans-jp;
+  font-size: 16px;
+  line-height: 1.7;
+  color: v.$color-text;
+}
+
+.lp-feature-row__media {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.lp-feature-row__callout {
+  position: absolute;
+  top: -20px;
+  right: 15%;
+  z-index: 2;
+  margin: 0;
+  border-radius: 8px;
+  background-color: v.$color-yellow-accent;
+  padding: 8px 16px;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.7;
+  color: v.$color-white;
+  text-align: center;
+
+  @include m.sp {
+    position: static;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.lp-feature-row--reverse .lp-feature-row__callout {
+  right: auto;
+  left: 15%;
+}
+
+.lp-feature-row__media-inner {
+  position: relative;
+  width: 100%;
+  max-width: 410px;
+
+  @include m.sp {
+    max-width: 220px;
+  }
+}
+
+.lp-feature-row__media-inner--plan {
+  aspect-ratio: 410.32 / 403;
+}
+
+.lp-feature-row__media-inner--arrange {
+  aspect-ratio: 436.98 / 406;
+}
+
+.lp-feature-row__media-shadow {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.lp-feature-row__media-inner--plan .lp-feature-row__media-shadow {
+  left: 27.58%;
+  top: 90.07%;
+  width: 58.98%;
+  height: 9.93%;
+}
+
+.lp-feature-row__media-inner--arrange .lp-feature-row__media-shadow {
+  left: 38.9%;
+  top: 90.15%;
+  width: 55.38%;
+  height: 9.85%;
+}
+
+.lp-feature-row__mockup {
+  position: absolute;
+  z-index: 1;
+  display: block;
+}
+
+.lp-feature-row__media-inner--plan .lp-feature-row__mockup {
+  left: 33.19%;
+  top: 0;
+  width: 47.77%;
+  height: 95.53%;
+}
+
+.lp-feature-row__media-inner--arrange .lp-feature-row__mockup {
+  left: 44.16%;
+  top: 0;
+  width: 44.85%;
+  height: 94.83%;
+}
+
+.lp-feature-row__illustration {
+  position: absolute;
+  z-index: 2;
+  display: block;
+}
+
+.lp-feature-row__media-inner--plan .lp-feature-row__illustration {
+  left: 0;
+  top: 53.6%;
+  width: 31.68%;
+  height: 44.17%;
+}
+
+.lp-feature-row__media-inner--arrange .lp-feature-row__illustration {
+  left: 0;
+  top: 64.53%;
+  width: 34.32%;
+  height: 32.76%;
+}
