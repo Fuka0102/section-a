@@ -20,7 +20,7 @@
 - [x] `template-parts/lp/header.php` + `scss/lp/components/_header.scss`（グロナビ、SPはハンバーガーメニュー）
 - [x] `scss/lp/components/_button.scss`（CTAボタン：角丸オレンジ。グラデーションテキストは白文字ベタ塗りに簡略化）
 - [x] `template-parts/lp/cta.php` + `scss/lp/components/_cta-section.scss`（「さぁTABICOで計画しよう」。装飾イラストはSPで非表示に）
-- [ ] `template-parts/lp/footer.php` + `scss/lp/components/_footer.scss`
+- [x] `template-parts/lp/footer.php` + `scss/lp/components/_footer.scss`
 
 ## 4. アセット書き出し
 

@@ -229,3 +229,14 @@
   bottom: 40px;
   width: 154px;
 }
+
+.lp-footer {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.lp-footer__copyright {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 10px;
+  color: #141414;
+}
