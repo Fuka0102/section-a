@@ -240,3 +240,56 @@
   font-size: 10px;
   color: #141414;
 }
+
+.lp-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 120px;
+}
+@media screen and (max-width: 768px) {
+  .lp-hero {
+    padding-bottom: 60px;
+  }
+}
+
+.lp-hero__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .lp-hero__inner {
+    padding: 40px 20px 0;
+    text-align: center;
+  }
+}
+
+.lp-hero__title {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 1.3;
+  color: #fff;
+  max-width: 800px;
+}
+@media screen and (max-width: 768px) {
+  .lp-hero__title {
+    font-size: 36px;
+    max-width: none;
+  }
+}
+
+.lp-hero__title-accent {
+  color: #f4a12d;
+}
+
+.lp-hero__cta {
+  display: inline-flex;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .lp-hero__cta {
+    margin-top: 24px;
+  }
+}
