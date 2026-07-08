@@ -14,3 +14,15 @@
 @use "components/feature-row";
 @use "components/step-card";
 @use "components/pricing-table";
+
+// 日本語テキストの字間を詰めて読みやすくする（LP全セクション共通）
+.lp-header,
+.lp-hero,
+.lp-problem,
+.lp-about-modes,
+.lp-steps,
+.lp-pricing,
+.lp-cta,
+.lp-footer {
+  font-feature-settings: "palt" 1;
+}

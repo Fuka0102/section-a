@@ -270,6 +270,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
@@ -915,4 +917,15 @@
   width: 24px;
   height: 4px;
   background-color: #70a5ff;
+}
+
+.lp-header,
+.lp-hero,
+.lp-problem,
+.lp-about-modes,
+.lp-steps,
+.lp-pricing,
+.lp-cta,
+.lp-footer {
+  font-feature-settings: "palt" 1;
 }
