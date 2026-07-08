@@ -59,7 +59,7 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-header__inner {
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 16px 20px;
   }
 }
@@ -108,6 +108,15 @@ ol {
   }
 }
 
+.lp-header__nav-item--cta {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .lp-header__nav-item--cta {
+    display: block;
+  }
+}
+
 .lp-header__nav-link {
   font-family: "Shippori Mincho", serif;
   font-weight: 600;
@@ -116,13 +125,15 @@ ol {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .lp-header__cta {
+    display: none;
+  }
+}
+
 .lp-header__menu-toggle {
   display: none;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
   padding: 0;
   background: none;
   border: none;
@@ -137,9 +148,9 @@ ol {
 .lp-header__menu-icon {
   position: relative;
   display: block;
-  width: 24px;
+  width: 40px;
   height: 2px;
-  background-color: #fff;
+  background-color: #f4a12d;
 }
 
 .lp-header__menu-icon::before,
@@ -147,17 +158,17 @@ ol {
   content: "";
   position: absolute;
   left: 0;
-  width: 24px;
+  width: 40px;
   height: 2px;
-  background-color: #fff;
+  background-color: #f4a12d;
 }
 
 .lp-header__menu-icon::before {
-  top: -7px;
+  top: -12px;
 }
 
 .lp-header__menu-icon::after {
-  top: 7px;
+  top: 12px;
 }
 
 .lp-header__sr-only {
@@ -273,9 +284,9 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-hero {
-    aspect-ratio: auto;
-    min-height: 480px;
-    padding: 80px 0 60px;
+    aspect-ratio: 402/874;
+    display: block;
+    padding: 0;
   }
 }
 
@@ -298,6 +309,11 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-hero__inner {
+    position: absolute;
+    top: 9.15%;
+    left: 0;
+    width: 100%;
+    height: auto;
     padding: 0 20px;
   }
 }
@@ -308,11 +324,13 @@ ol {
   font-size: 80px;
   line-height: 1.3;
   color: #fff;
-  margin-top: 240px;
+  margin-top: 160px;
 }
 @media screen and (max-width: 768px) {
   .lp-hero__title {
-    font-size: 36px;
+    margin-top: 0;
+    font-size: 48px;
+    line-height: 1.2;
   }
 }
 
@@ -326,7 +344,12 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-hero__cta {
-    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    height: 64px;
+    margin-top: 32px;
+    padding: 0 32px;
   }
 }
 

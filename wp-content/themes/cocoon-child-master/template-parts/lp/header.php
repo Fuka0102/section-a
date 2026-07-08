@@ -20,6 +20,9 @@ if ( !defined( 'ABSPATH' ) ) exit;
         <li class="lp-header__nav-item">
           <a class="lp-header__nav-link" href="#">料金プラン</a>
         </li>
+        <li class="lp-header__nav-item lp-header__nav-item--cta">
+          <a class="lp-header__nav-link" href="#">まずは無料でお試し</a>
+        </li>
       </ul>
       <a class="lp-header__cta lp-button" href="#">まずは無料でお試し</a>
     </nav>
