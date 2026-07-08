@@ -788,3 +788,118 @@
   line-height: 1.7;
   color: #141414;
 }
+
+.lp-pricing {
+  padding: 80px 20px;
+}
+
+.lp-pricing--card {
+  background-color: #a9dceb;
+}
+
+.lp-pricing__inner {
+  position: relative;
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.lp-pricing--card .lp-pricing__inner {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 48px 40px 80px;
+}
+@media screen and (max-width: 768px) {
+  .lp-pricing--card .lp-pricing__inner {
+    padding: 32px 20px 60px;
+  }
+}
+
+.lp-pricing__subtitle {
+  margin-top: 24px;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #141414;
+}
+
+.lp-pricing__illustration {
+  position: absolute;
+  left: -18px;
+  bottom: 0;
+  width: 176px;
+}
+@media screen and (max-width: 768px) {
+  .lp-pricing__illustration {
+    display: none;
+  }
+}
+
+.lp-pricing-table__wrapper {
+  margin-top: 48px;
+  overflow-x: auto;
+}
+
+.lp-pricing-table {
+  width: 100%;
+  min-width: 556px;
+  border-collapse: collapse;
+}
+
+.lp-pricing-table__row-label-header {
+  width: 33%;
+}
+
+.lp-pricing-table__col-header {
+  width: 33%;
+  padding: 13px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+.lp-pricing-table__col-header--free {
+  background-color: #70a5ff;
+}
+
+.lp-pricing-table__col-header--premium {
+  background-color: #1d5d9b;
+}
+
+.lp-pricing-table__row-label {
+  padding: 12px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #141414;
+  text-align: left;
+}
+
+.lp-pricing-table__row--odd {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lp-pricing-table__row--even {
+  background-color: rgba(215, 215, 215, 0.2);
+}
+
+.lp-pricing-table__cell {
+  padding: 12px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  color: #141414;
+  text-align: center;
+}
+
+.lp-pricing-table__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.lp-pricing-table__dash {
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  background-color: #70a5ff;
+}

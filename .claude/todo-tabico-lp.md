@@ -32,7 +32,7 @@
 - [x] `template-parts/lp/problem.php` + `scss/lp/components/_balloon-card.scss`（吹き出し4つ。PCはFigma実測値を%換算した散らばり配置、SPは位置・尻尾ロジックを廃止し縦積みカードに変換）
 - [x] `template-parts/lp/about-modes.php` + `scss/lp/components/_feature-row.scss`（PLAN/ARRANGEモード紹介、交互レイアウト。SPは画像→テキストの縦積み。`.lp-feature-row`は機能紹介ページでも再利用予定）
 - [x] `template-parts/lp/steps.php` + `scss/lp/components/_step-card.scss`（3ステップ。SPは縦積み、矢印は下向きに簡略化）
-- [ ] `template-parts/lp/pricing-table.php` + `scss/lp/components/_pricing-table.scss`（Free/Premium比較表。SPは表構造のまま横スクロール）
+- [x] `template-parts/lp/pricing-table.php` + `scss/lp/components/_pricing-table.scss`（Free/Premium比較表。SPは表構造のまま横スクロール。トップ/料金ページ両方の見出し差異に対応できるよう`$args`でheading/subtitle/cardを可変化）
 - [ ] `front-page.php` 組み立て：header → hero → problem → about-modes → steps → pricing-table → cta → footer
 
 ## 6. 機能紹介ページ（page-templates/lp-features.php）
