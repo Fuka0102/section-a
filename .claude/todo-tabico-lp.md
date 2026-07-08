@@ -24,7 +24,7 @@
 
 ## 4. アセット書き出し
 
-- [ ] Figmaからイラスト・写真・アイコンを書き出し `assets/images/lp/` に配置（get_design_context/get_screenshotで都度取得）
+- [x] Figmaからイラスト・写真・アイコンを書き出し `assets/images/lp/` に配置（get_design_context/get_screenshotで都度取得。ヒーロー写真はJPEG変換・圧縮して4.6MB→216KBに削減。電話モックアップ周りの微小な装飾アイコン群は簡略化のため省略）
 
 ## 5. トップページ（front-page.php）
 
