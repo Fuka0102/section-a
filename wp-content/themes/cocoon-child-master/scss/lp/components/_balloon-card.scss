@@ -1,0 +1,189 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.lp-problem {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.lp-problem__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.lp-problem__eyebrow {
+  display: inline-block;
+  border-bottom: 4px solid v.$color-yellow-accent;
+  padding-bottom: 8px;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 24px;
+  color: v.$color-yellow-accent;
+}
+
+.lp-problem__title {
+  font-family: v.$font-shippori-mincho;
+  font-weight: 600;
+  font-size: 48px;
+  color: v.$color-text;
+
+  @include m.sp {
+    font-size: 28px;
+  }
+}
+
+// PC: Figmaの散らばり配置をシーン全体に対する%座標で再現
+.lp-problem__scene {
+  position: relative;
+  width: 100%;
+  max-width: 1103px;
+  aspect-ratio: 1103 / 411;
+  margin: 48px auto 0;
+
+  @include m.sp {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    aspect-ratio: auto;
+    max-width: none;
+  }
+}
+
+.lp-problem__illustration {
+  position: absolute;
+  left: 44.24%;
+  top: 41.36%;
+  width: 15.96%;
+  height: 57.18%;
+
+  @include m.sp {
+    position: static;
+    width: 140px;
+    height: auto;
+  }
+}
+
+.lp-problem__illustration-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 82.13%;
+
+  @include m.sp {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.lp-problem__illustration-badge {
+  position: absolute;
+  left: 53.69%;
+  top: 0;
+  width: 31.82%;
+  height: 23.4%;
+
+  @include m.sp {
+    display: none;
+  }
+}
+
+.lp-problem__balloon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include m.sp {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.lp-problem__balloon-text {
+  background-color: v.$color-blue-light;
+  border-radius: 8px;
+  padding: 24px;
+  font-family: v.$font-noto-sans-jp;
+  font-size: 18px;
+  line-height: 1.7;
+  color: v.$color-text;
+}
+
+.lp-problem__balloon-tail {
+  position: absolute;
+  display: block;
+
+  @include m.sp {
+    display: none;
+  }
+}
+
+// 各吹き出しの位置・尻尾の向き（Figma実測値を%換算）
+.lp-problem__balloon--1 {
+  left: 6.17%;
+  top: 0%;
+  width: 38.08%;
+  height: 41.61%;
+
+  .lp-problem__balloon-tail {
+    left: 73.57%;
+    top: 60.82%;
+    width: 20.72%;
+    height: 39.04%;
+    transform: rotate(180deg);
+  }
+}
+
+.lp-problem__balloon--2 {
+  left: 0%;
+  top: 58.39%;
+  width: 38.08%;
+  height: 41.61%;
+
+  .lp-problem__balloon-tail {
+    left: 102.86%;
+    top: 16.37%;
+    width: 7.02%;
+    height: 16.96%;
+    transform: rotate(180deg);
+  }
+}
+
+.lp-problem__balloon--3 {
+  left: 57.93%;
+  top: 6.33%;
+  width: 38.08%;
+  height: 30.6%;
+
+  .lp-problem__balloon-tail {
+    left: 19.29%;
+    top: 46.92%;
+    width: 20.72%;
+    height: 53.08%;
+    transform: scaleY(-1);
+  }
+}
+
+.lp-problem__balloon--4 {
+  left: 61.92%;
+  top: 64.23%;
+  width: 38.08%;
+  height: 27.49%;
+
+  .lp-problem__balloon-tail {
+    left: 2.38%;
+    top: 30.97%;
+    width: 7.62%;
+    height: 15.5%;
+    transform: scaleY(-1);
+  }
+}

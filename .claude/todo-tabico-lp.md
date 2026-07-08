@@ -29,7 +29,7 @@
 ## 5. トップページ（front-page.php）
 
 - [x] `template-parts/lp/hero.php` + `scss/lp/components/_hero.scss`（グラデーションテキストは白文字＋オレンジアクセントに簡略化）
-- [ ] `template-parts/lp/problem.php` + `scss/lp/components/_balloon-card.scss`（吹き出し4つ。SPは位置・尻尾ロジックを廃止し縦積みカードに変換）
+- [x] `template-parts/lp/problem.php` + `scss/lp/components/_balloon-card.scss`（吹き出し4つ。PCはFigma実測値を%換算した散らばり配置、SPは位置・尻尾ロジックを廃止し縦積みカードに変換）
 - [ ] `template-parts/lp/about-modes.php` + `scss/lp/components/_feature-row.scss`（PLAN/ARRANGEモード紹介、交互レイアウト。SPは画像→テキストの縦積み）
 - [ ] `template-parts/lp/steps.php` + `scss/lp/components/_step-card.scss`（3ステップ。SPは縦積み、矢印は下向きに簡略化）
 - [ ] `template-parts/lp/pricing-table.php` + `scss/lp/components/_pricing-table.scss`（Free/Premium比較表。SPは表構造のまま横スクロール）
