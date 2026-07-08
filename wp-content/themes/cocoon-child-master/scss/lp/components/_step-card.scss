@@ -1,0 +1,99 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.lp-steps {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.lp-steps__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+
+  @include m.sp {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.lp-steps__connector {
+  flex-shrink: 0;
+  width: 24px;
+
+  @include m.sp {
+    width: 16px;
+    transform: rotate(90deg);
+  }
+}
+
+.lp-step-card {
+  position: relative;
+  flex: 1;
+  max-width: 294px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid v.$color-blue-dark;
+  border-radius: 8px;
+  background-color: v.$color-white;
+  padding: 48px 16px 24px;
+  text-align: center;
+
+  @include m.sp {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+.lp-step-card__badge {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: v.$color-white;
+  padding: 0 8px;
+  font-family: v.$font-din;
+  font-size: 16px;
+  color: v.$color-blue-dark;
+  white-space: nowrap;
+}
+
+.lp-step-card__badge-number {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.lp-step-card__illustration {
+  width: 146px;
+  height: 152px;
+  object-fit: contain;
+}
+
+.lp-step-card__title {
+  font-family: v.$font-din;
+  font-weight: 600;
+  font-size: 20px;
+  color: v.$color-text;
+}
+
+.lp-step-card__underline {
+  display: block;
+  width: 48px;
+  height: 4px;
+  background-color: v.$color-yellow-accent;
+}
+
+.lp-step-card__description {
+  font-family: v.$font-noto-sans-jp;
+  font-size: 16px;
+  line-height: 1.7;
+  color: v.$color-text;
+}
