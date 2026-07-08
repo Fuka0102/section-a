@@ -1,0 +1,22 @@
+// LPページはCocoon標準CSSを読み込まないため、ブラウザ既定のマージンをリセットする。
+// 各コンポーネント側で明示的に指定したmargin/paddingは、クラスセレクタの詳細度により
+// このリセットより優先される。
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
