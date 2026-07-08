@@ -1,0 +1,79 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.lp-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px;
+  background-color: v.$color-white;
+}
+
+.lp-cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.lp-cta__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.lp-cta__eyebrow {
+  display: inline-block;
+  border-bottom: 4px solid v.$color-yellow-accent;
+  padding-bottom: 8px;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 24px;
+  color: v.$color-yellow-accent;
+}
+
+.lp-cta__title {
+  font-family: v.$font-shippori-mincho;
+  font-weight: 600;
+  font-size: 48px;
+  color: v.$color-text;
+
+  @include m.sp {
+    font-size: 32px;
+  }
+}
+
+.lp-cta__body {
+  font-family: v.$font-noto-sans-jp;
+  font-size: 16px;
+  line-height: 1.7;
+  color: v.$color-text;
+}
+
+.lp-cta__illustration {
+  position: absolute;
+  display: block;
+
+  @include m.sp {
+    display: none;
+  }
+}
+
+.lp-cta__illustration--airplane {
+  top: 57px;
+  right: 8%;
+  width: 204px;
+  transform: rotate(8.76deg);
+}
+
+.lp-cta__illustration--traveler {
+  left: 6%;
+  bottom: 40px;
+  width: 154px;
+}

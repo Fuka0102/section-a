@@ -150,3 +150,82 @@
   white-space: nowrap;
   border: 0;
 }
+
+.lp-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.lp-cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.lp-cta__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.lp-cta__eyebrow {
+  display: inline-block;
+  border-bottom: 4px solid #f5c076;
+  padding-bottom: 8px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #f5c076;
+}
+
+.lp-cta__title {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #141414;
+}
+@media screen and (max-width: 768px) {
+  .lp-cta__title {
+    font-size: 32px;
+  }
+}
+
+.lp-cta__body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #141414;
+}
+
+.lp-cta__illustration {
+  position: absolute;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .lp-cta__illustration {
+    display: none;
+  }
+}
+
+.lp-cta__illustration--airplane {
+  top: 57px;
+  right: 8%;
+  width: 204px;
+  transform: rotate(8.76deg);
+}
+
+.lp-cta__illustration--traveler {
+  left: 6%;
+  bottom: 40px;
+  width: 154px;
+}
