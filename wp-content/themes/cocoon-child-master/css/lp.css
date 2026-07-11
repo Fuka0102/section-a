@@ -243,11 +243,6 @@ ol {
   position: absolute;
   display: block;
 }
-@media screen and (max-width: 768px) {
-  .lp-cta__illustration {
-    display: none;
-  }
-}
 
 .lp-cta__illustration--airplane {
   top: 57px;
@@ -255,11 +250,31 @@ ol {
   width: 204px;
   transform: rotate(8.76deg);
 }
+@media screen and (max-width: 1199px) {
+  .lp-cta__illustration--airplane {
+    right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lp-cta__illustration--airplane {
+    top: 0;
+  }
+}
 
 .lp-cta__illustration--traveler {
   left: 6%;
   bottom: 40px;
   width: 154px;
+}
+@media screen and (max-width: 1199px) {
+  .lp-cta__illustration--traveler {
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lp-cta__illustration--traveler {
+    bottom: 9%;
+  }
 }
 
 .lp-footer {

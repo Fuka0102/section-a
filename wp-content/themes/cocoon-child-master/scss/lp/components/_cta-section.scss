@@ -31,10 +31,6 @@
 .lp-cta__illustration {
   position: absolute;
   display: block;
-
-  @include m.sp {
-    display: none;
-  }
 }
 
 .lp-cta__illustration--airplane {
@@ -42,10 +38,26 @@
   right: 8%;
   width: 204px;
   transform: rotate(8.76deg);
+
+  @media screen and (max-width: 1199px) {
+    right: 0;
+  }
+
+  @include m.sp {
+    top: 0;
+  }
 }
 
 .lp-cta__illustration--traveler {
   left: 6%;
   bottom: 40px;
   width: 154px;
+
+  @media screen and (max-width: 1199px) {
+    left: 0;
+  }
+
+  @include m.sp {
+    bottom: 9%;
+  }
 }
