@@ -375,6 +375,39 @@ ol {
   }
 }
 
+.lp-page-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #01a1cd;
+  height: 360px;
+}
+@media screen and (max-width: 768px) {
+  .lp-page-hero {
+    height: auto;
+    padding: 96px 20px 40px;
+  }
+}
+
+.lp-page-hero .lp-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.lp-page-hero__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.lp-page-hero .lp-section-heading__title {
+  color: #fff;
+}
+
 .lp-problem {
   max-width: 1200px;
   margin: 0 auto;
@@ -1165,6 +1198,7 @@ ol {
 
 .lp-header,
 .lp-hero,
+.lp-page-hero,
 .lp-problem,
 .lp-about-modes,
 .lp-features,
