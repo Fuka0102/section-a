@@ -24,8 +24,11 @@
 .lp-feature-row {
   display: flex;
   align-items: center;
-  gap: 80px;
   margin-top: 80px;
+
+  @include m.pc {
+    justify-content: space-between;
+  }
 
   @include m.sp {
     flex-direction: column;

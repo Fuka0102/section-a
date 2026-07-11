@@ -623,8 +623,12 @@ ol {
 .lp-feature-row {
   display: flex;
   align-items: center;
-  gap: 80px;
   margin-top: 80px;
+}
+@media screen and (min-width: 769px) {
+  .lp-feature-row {
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 768px) {
   .lp-feature-row {
@@ -846,7 +850,7 @@ ol {
 
 .lp-steps__list {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 24px;
   margin-top: 48px;
@@ -859,6 +863,7 @@ ol {
 }
 
 .lp-steps__connector {
+  align-self: center;
   flex-shrink: 0;
   width: 24px;
 }
