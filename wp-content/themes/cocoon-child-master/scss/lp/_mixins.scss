@@ -6,3 +6,10 @@
     @content;
   }
 }
+
+// PC（769px以上）向けスタイルを記述するためのmixin
+@mixin pc {
+  @media screen and (min-width: (v.$breakpoint-sp + 1)) {
+    @content;
+  }
+}

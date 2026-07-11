@@ -37,6 +37,7 @@
     position: static;
     width: 140px;
     height: auto;
+    order: 5;
   }
 }
 
@@ -73,9 +74,22 @@
   justify-content: center;
 
   @include m.sp {
-    position: static;
+    position: relative;
     width: 100%;
     height: auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -12px;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 12px solid v.$color-blue-light;
+    }
   }
 }
 
@@ -100,10 +114,12 @@
 
 // 各吹き出しの位置・尻尾の向き（Figma実測値を%換算）
 .lp-problem__balloon--1 {
-  left: 6.17%;
-  top: 0%;
-  width: 38.08%;
-  height: 41.61%;
+  @include m.pc {
+    left: 6.17%;
+    top: 0%;
+    width: 38.08%;
+    height: 41.61%;
+  }
 
   .lp-problem__balloon-tail {
     left: 73.57%;
@@ -115,10 +131,12 @@
 }
 
 .lp-problem__balloon--2 {
-  left: 0%;
-  top: 58.39%;
-  width: 38.08%;
-  height: 41.61%;
+  @include m.pc {
+    left: 0%;
+    top: 58.39%;
+    width: 38.08%;
+    height: 41.61%;
+  }
 
   .lp-problem__balloon-tail {
     left: 102.86%;
@@ -130,10 +148,12 @@
 }
 
 .lp-problem__balloon--3 {
-  left: 57.93%;
-  top: 6.33%;
-  width: 38.08%;
-  height: 30.6%;
+  @include m.pc {
+    left: 57.93%;
+    top: 6.33%;
+    width: 38.08%;
+    height: 30.6%;
+  }
 
   .lp-problem__balloon-tail {
     left: 19.29%;
@@ -145,10 +165,12 @@
 }
 
 .lp-problem__balloon--4 {
-  left: 61.92%;
-  top: 64.23%;
-  width: 38.08%;
-  height: 27.49%;
+  @include m.pc {
+    left: 61.92%;
+    top: 64.23%;
+    width: 38.08%;
+    height: 27.49%;
+  }
 
   .lp-problem__balloon-tail {
     left: 2.38%;

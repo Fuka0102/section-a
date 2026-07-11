@@ -390,6 +390,7 @@ ol {
     position: static;
     width: 140px;
     height: auto;
+    order: 5;
   }
 }
 
@@ -429,9 +430,21 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-problem__balloon {
-    position: static;
+    position: relative;
     width: 100%;
     height: auto;
+  }
+  .lp-problem__balloon::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #8dddff;
   }
 }
 
@@ -455,11 +468,13 @@ ol {
   }
 }
 
-.lp-problem__balloon--1 {
-  left: 6.17%;
-  top: 0%;
-  width: 38.08%;
-  height: 41.61%;
+@media screen and (min-width: 769px) {
+  .lp-problem__balloon--1 {
+    left: 6.17%;
+    top: 0%;
+    width: 38.08%;
+    height: 41.61%;
+  }
 }
 .lp-problem__balloon--1 .lp-problem__balloon-tail {
   left: 73.57%;
@@ -469,11 +484,13 @@ ol {
   transform: rotate(180deg);
 }
 
-.lp-problem__balloon--2 {
-  left: 0%;
-  top: 58.39%;
-  width: 38.08%;
-  height: 41.61%;
+@media screen and (min-width: 769px) {
+  .lp-problem__balloon--2 {
+    left: 0%;
+    top: 58.39%;
+    width: 38.08%;
+    height: 41.61%;
+  }
 }
 .lp-problem__balloon--2 .lp-problem__balloon-tail {
   left: 102.86%;
@@ -483,11 +500,13 @@ ol {
   transform: rotate(180deg);
 }
 
-.lp-problem__balloon--3 {
-  left: 57.93%;
-  top: 6.33%;
-  width: 38.08%;
-  height: 30.6%;
+@media screen and (min-width: 769px) {
+  .lp-problem__balloon--3 {
+    left: 57.93%;
+    top: 6.33%;
+    width: 38.08%;
+    height: 30.6%;
+  }
 }
 .lp-problem__balloon--3 .lp-problem__balloon-tail {
   left: 19.29%;
@@ -497,11 +516,13 @@ ol {
   transform: scaleY(-1);
 }
 
-.lp-problem__balloon--4 {
-  left: 61.92%;
-  top: 64.23%;
-  width: 38.08%;
-  height: 27.49%;
+@media screen and (min-width: 769px) {
+  .lp-problem__balloon--4 {
+    left: 61.92%;
+    top: 64.23%;
+    width: 38.08%;
+    height: 27.49%;
+  }
 }
 .lp-problem__balloon--4 .lp-problem__balloon-tail {
   left: 2.38%;
