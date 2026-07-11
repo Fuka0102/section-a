@@ -31,12 +31,12 @@ function tabico_lp_enqueue_assets() {
     file_exists( $lp_css_file ) ? filemtime( $lp_css_file ) : false
   );
 
-  $lp_header_nav_js_file = get_stylesheet_directory() . '/js/lp/header-nav.js';
+  $lp_sp_bar_js_file = get_stylesheet_directory() . '/js/lp/sp-bar.js';
   wp_enqueue_script(
-    'tabico-lp-header-nav',
-    get_stylesheet_directory_uri() . '/js/lp/header-nav.js',
+    'tabico-lp-sp-bar',
+    get_stylesheet_directory_uri() . '/js/lp/sp-bar.js',
     array(),
-    file_exists( $lp_header_nav_js_file ) ? filemtime( $lp_header_nav_js_file ) : false,
+    file_exists( $lp_sp_bar_js_file ) ? filemtime( $lp_sp_bar_js_file ) : false,
     true
   );
 
