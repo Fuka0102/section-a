@@ -20,6 +20,24 @@
   }
 }
 
+.lp-features {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.lp-features__intro {
+  text-align: center;
+  font-family: v.$font-noto-sans-jp;
+  font-size: 22px;
+  line-height: 1.7;
+  color: v.$color-text;
+
+  @include m.sp {
+    font-size: 15px;
+  }
+}
+
 // PLAN/ARRANGEモード紹介・機能紹介ページで共通利用する画像＋テキスト交互レイアウト
 .lp-feature-row {
   display: flex;
@@ -108,6 +126,84 @@
   }
 }
 
+// 機能紹介ページ専用：EN/JA分割見出しの代わりに使う一文見出し
+.lp-feature-row__title {
+  position: relative;
+  margin-left: 52px;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  color: v.$color-blue-dark;
+
+  @include m.sp {
+    margin-left: 40px;
+    font-size: 24px;
+  }
+}
+
+// 機能紹介ページ専用：見出し下の小さいモードバッジ（__calloutより小型）
+.lp-feature-row__badge {
+  display: block;
+  width: fit-content;
+  margin-top: 8px;
+  margin-left: 52px;
+  border-radius: 8px;
+  background-color: v.$color-yellow-accent;
+  padding: 4px 8px;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.7;
+  color: v.$color-white;
+
+  @include m.sp {
+    margin-left: 0;
+    margin-top: 4px;
+    font-size: 12px;
+  }
+}
+
+// 機能紹介ページ専用：チェックリスト
+.lp-feature-row__checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+  margin-left: 52px;
+  list-style: none;
+  padding: 0;
+
+  @include m.sp {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
+.lp-feature-row__checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lp-feature-row__checklist-icon {
+  display: block;
+  width: 16px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.lp-feature-row__checklist-text {
+  font-family: v.$font-noto-sans-jp;
+  font-size: 16px;
+  line-height: 1.7;
+  color: v.$color-text;
+
+  @include m.sp {
+    font-size: 14px;
+  }
+}
+
 .lp-feature-row__description {
   margin-top: 24px;
   margin-left: 52px;
@@ -178,6 +274,16 @@
 
 .lp-feature-row__media-inner--arrange {
   aspect-ratio: 436.98 / 406;
+}
+
+// feature_mockup_*.pngは影込みで書き出し済みのため、幅・高さいっぱいに表示すればよい
+.lp-feature-row__media-inner--feature {
+  max-width: 242px;
+  aspect-ratio: 242 / 403;
+
+  @include m.sp {
+    max-width: 140px;
+  }
 }
 
 .lp-feature-row__media-shadow {

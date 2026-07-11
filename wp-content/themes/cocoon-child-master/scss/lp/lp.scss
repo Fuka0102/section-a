@@ -11,6 +11,7 @@
 @use "components/cta-section";
 @use "components/footer";
 @use "components/hero";
+@use "components/page-hero";
 @use "components/balloon-card";
 @use "components/feature-row";
 @use "components/step-card";
@@ -19,8 +20,10 @@
 // 日本語テキストの字間を詰めて読みやすくする（LP全セクション共通）
 .lp-header,
 .lp-hero,
+.lp-page-hero,
 .lp-problem,
 .lp-about-modes,
+.lp-features,
 .lp-steps,
 .lp-pricing,
 .lp-cta,

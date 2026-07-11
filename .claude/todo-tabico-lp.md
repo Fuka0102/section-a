@@ -37,8 +37,8 @@
 
 ## 6. 機能紹介ページ（page-templates/lp-features.php）
 
-- [ ] `template-parts/lp/features-block.php`（01〜04を配列ループで呼び出すパラメータ化部品、`_feature-row.scss` を再利用）
-- [ ] `page-templates/lp-features.php` 組み立て：header → hero帯 → features-block×4 → cta → footer
+- [x] `template-parts/lp/features-block.php`（01〜04を配列ループで呼び出すパラメータ化部品、`_feature-row.scss` を再利用）
+- [x] `page-templates/lp-features.php` 組み立て：header → hero帯 → features-block×4 → cta → footer
 
 ## 7. 料金プランページ（page-templates/lp-pricing.php）
 

@@ -1,0 +1,35 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+// 下層ページ共通ヒーロー帯（機能紹介／料金プランページ）
+.lp-page-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: v.$color-blue-band;
+  height: 360px;
+
+  @include m.sp {
+    height: auto;
+    padding: 96px 20px 40px;
+  }
+}
+
+.lp-page-hero .lp-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.lp-page-hero__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.lp-page-hero .lp-section-heading__title {
+  color: v.$color-white;
+}
