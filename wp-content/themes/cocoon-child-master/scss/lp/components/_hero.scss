@@ -100,4 +100,9 @@
     left: 3.42%;
     width: 82.21vw;
   }
+
+  // 576px〜768pxは幅を伸ばしすぎるとlp-hero__titleと被るため、幅を抑える
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    width: 50vw;
+  }
 }
