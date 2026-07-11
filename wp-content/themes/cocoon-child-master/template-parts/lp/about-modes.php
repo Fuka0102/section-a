@@ -26,9 +26,9 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
         <h3 class="lp-feature-row__mode-title">
           <span class="lp-feature-row__mode-title-en">PLAN</span>
           <span class="lp-feature-row__mode-title-ja">モード</span>
-          <span class="lp-feature-row__callout">まずはみんなどこ行きたい？</span>
         </h3>
       </div>
+      <p class="lp-feature-row__callout">まずはみんなどこ行きたい？</p>
       <p class="lp-feature-row__description">
         まずはアイデアを出し合おう。行きたい場所、やりたいこと——思いついたものをどんどん追加。<strong>「行きたい！」ボタン</strong>で気軽に意見を集めて、みんなの希望を見える化できます。
       </p>
@@ -47,9 +47,9 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
         <h3 class="lp-feature-row__mode-title">
           <span class="lp-feature-row__mode-title-en">ARRANGE</span>
           <span class="lp-feature-row__mode-title-ja">モード</span>
-          <span class="lp-feature-row__callout">みんなで旅行のスケジュールを<br>作ってみよう</span>
         </h3>
       </div>
+      <p class="lp-feature-row__callout">みんなで旅行のスケジュールを<br>作ってみよう</p>
       <p class="lp-feature-row__description">
         みんなの希望を日程に落とし込もう。泊数を選ぶと日数分のカレンダーが表示され、決まった予定をみんなで登録・編集できます。予定はドラッグ&amp;ドロップで移動でき、<strong>Google マップのリンクやメモも添付可能</strong>。旅のしおりがそのまま完成します。
       </p>

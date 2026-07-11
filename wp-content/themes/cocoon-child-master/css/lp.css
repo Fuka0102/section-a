@@ -733,11 +733,10 @@ ol {
 }
 
 .lp-feature-row__callout {
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  z-index: 2;
-  margin: 0;
+  display: block;
+  width: fit-content;
+  margin-top: 16px;
+  margin-left: 52px;
   border-radius: 8px;
   background-color: #f5c076;
   padding: 8px 16px;
@@ -747,29 +746,10 @@ ol {
   line-height: 1.7;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
-  transform: translate(20px, -50%);
 }
 @media screen and (max-width: 768px) {
   .lp-feature-row__callout {
-    position: static;
-    display: block;
-    width: fit-content;
-    white-space: normal;
-    margin: 8px auto 0;
-    transform: none;
-  }
-}
-
-.lp-feature-row--reverse .lp-feature-row__callout {
-  left: auto;
-  right: 100%;
-  transform: translate(-20px, -50%);
-}
-@media screen and (max-width: 768px) {
-  .lp-feature-row--reverse .lp-feature-row__callout {
-    right: auto;
-    transform: none;
+    margin-left: 40px;
   }
 }
 
