@@ -478,7 +478,6 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-problem__balloon-text::after {
-    left: 50%;
     top: 100%;
     transform: translateX(-50%);
     border-top: 12px solid #8dddff;
@@ -487,6 +486,11 @@ ol {
 
 .lp-problem__balloon--1 {
   order: 1;
+}
+@media screen and (max-width: 768px) {
+  .lp-problem__balloon--1 .lp-problem__balloon-text::after {
+    left: 80%;
+  }
 }
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--1 {
@@ -506,6 +510,11 @@ ol {
 .lp-problem__balloon--2 {
   order: 2;
 }
+@media screen and (max-width: 768px) {
+  .lp-problem__balloon--2 .lp-problem__balloon-text::after {
+    left: 20%;
+  }
+}
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--2 {
     left: 0%;
@@ -524,6 +533,11 @@ ol {
 .lp-problem__balloon--3 {
   order: 4;
 }
+@media screen and (max-width: 768px) {
+  .lp-problem__balloon--3 .lp-problem__balloon-text::after {
+    left: 20%;
+  }
+}
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--3 {
     left: 57.93%;
@@ -541,6 +555,11 @@ ol {
 
 .lp-problem__balloon--4 {
   order: 5;
+}
+@media screen and (max-width: 768px) {
+  .lp-problem__balloon--4 .lp-problem__balloon-text::after {
+    left: 80%;
+  }
 }
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--4 {

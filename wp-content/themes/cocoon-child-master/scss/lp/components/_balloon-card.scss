@@ -103,7 +103,6 @@
 
   @include m.sp {
     &::after {
-      left: 50%;
       top: 100%;
       transform: translateX(-50%);
       border-top: 12px solid v.$color-blue-light;
@@ -115,6 +114,12 @@
 // SPはorderで「吹き出し2つ→イラスト→吹き出し2つ」の順に並べ替える
 .lp-problem__balloon--1 {
   order: 1;
+
+  @include m.sp {
+    .lp-problem__balloon-text::after {
+      left: 80%;
+    }
+  }
 
   @include m.pc {
     left: 6.17%;
@@ -134,6 +139,12 @@
 .lp-problem__balloon--2 {
   order: 2;
 
+  @include m.sp {
+    .lp-problem__balloon-text::after {
+      left: 20%;
+    }
+  }
+
   @include m.pc {
     left: 0%;
     top: 58.39%;
@@ -152,6 +163,12 @@
 .lp-problem__balloon--3 {
   order: 4;
 
+  @include m.sp {
+    .lp-problem__balloon-text::after {
+      left: 20%;
+    }
+  }
+
   @include m.pc {
     left: 57.93%;
     top: 6.33%;
@@ -169,6 +186,12 @@
 
 .lp-problem__balloon--4 {
   order: 5;
+
+  @include m.sp {
+    .lp-problem__balloon-text::after {
+      left: 80%;
+    }
+  }
 
   @include m.pc {
     left: 61.92%;
