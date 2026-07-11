@@ -412,7 +412,7 @@ ol {
     position: static;
     width: 140px;
     height: auto;
-    order: 5;
+    order: 3;
   }
 }
 
@@ -485,6 +485,9 @@ ol {
   }
 }
 
+.lp-problem__balloon--1 {
+  order: 1;
+}
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--1 {
     left: 6.17%;
@@ -500,6 +503,9 @@ ol {
   }
 }
 
+.lp-problem__balloon--2 {
+  order: 2;
+}
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--2 {
     left: 0%;
@@ -515,6 +521,9 @@ ol {
   }
 }
 
+.lp-problem__balloon--3 {
+  order: 4;
+}
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--3 {
     left: 57.93%;
@@ -530,6 +539,9 @@ ol {
   }
 }
 
+.lp-problem__balloon--4 {
+  order: 5;
+}
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--4 {
     left: 61.92%;

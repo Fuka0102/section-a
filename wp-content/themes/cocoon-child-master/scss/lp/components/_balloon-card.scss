@@ -37,7 +37,7 @@
     position: static;
     width: 140px;
     height: auto;
-    order: 5;
+    order: 3;
   }
 }
 
@@ -112,7 +112,10 @@
 }
 
 // 各吹き出しの位置・尻尾の向き（Figma実測値を%換算、PCのみ）
+// SPはorderで「吹き出し2つ→イラスト→吹き出し2つ」の順に並べ替える
 .lp-problem__balloon--1 {
+  order: 1;
+
   @include m.pc {
     left: 6.17%;
     top: 0%;
@@ -129,6 +132,8 @@
 }
 
 .lp-problem__balloon--2 {
+  order: 2;
+
   @include m.pc {
     left: 0%;
     top: 58.39%;
@@ -145,6 +150,8 @@
 }
 
 .lp-problem__balloon--3 {
+  order: 4;
+
   @include m.pc {
     left: 57.93%;
     top: 6.33%;
@@ -161,6 +168,8 @@
 }
 
 .lp-problem__balloon--4 {
+  order: 5;
+
   @include m.pc {
     left: 61.92%;
     top: 64.23%;
