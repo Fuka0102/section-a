@@ -15,7 +15,7 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
 
   <div class="lp-problem__scene">
     <div class="lp-problem__illustration">
-      <img class="lp-problem__illustration-image" src="<?php echo esc_url( $lp_img_base . 'problem-illustration.png' ); ?>" alt="" loading="lazy">
+      <img class="lp-problem__illustration-image" src="<?php echo esc_url( $lp_img_base . 'onayami_woman.png' ); ?>" alt="" loading="lazy">
     </div>
 
     <div class="lp-problem__balloon lp-problem__balloon--1">
