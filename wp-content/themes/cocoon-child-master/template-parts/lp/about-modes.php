@@ -51,7 +51,7 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
       </div>
       <p class="lp-feature-row__callout">みんなで旅行のスケジュールを<br class="lp-feature-row__callout-break">作ってみよう</p>
       <p class="lp-feature-row__description">
-        みんなの希望を日程に落とし込もう。泊数を選ぶと日数分のカレンダーが表示され、決まった予定をみんなで登録・編集できます。予定はドラッグ&amp;ドロップで移動でき、<strong>Google マップのリンクやメモも添付可能</strong>。旅のしおりがそのまま完成します。
+        みんなの希望を日程に落とし込もう。<br>泊数を選ぶと日数分のカレンダーが表示され、決まった予定をみんなで登録・編集できます。予定はドラッグ&amp;ドロップで移動でき、<strong>Google マップのリンクやメモも添付可能</strong>。<br>旅のしおりがそのまま完成します。
       </p>
     </div>
     <div class="lp-feature-row__media">

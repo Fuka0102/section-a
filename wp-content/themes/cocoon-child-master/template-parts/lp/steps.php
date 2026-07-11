@@ -18,13 +18,13 @@ $lp_steps = array(
     'number'      => '02',
     'illustration' => 'undraw-sharing-ideas.svg',
     'title'       => '行きたい場所を出し合う',
-    'description' => 'プランモードでアイデアを自由に追加。「行きたい！」ボタンで気軽に意見を集めて、<strong>みんなの希望を見える化</strong>しましょう。',
+    'description' => 'プランモードでアイデアを自由に追加。<br>「行きたい！」ボタンで気軽に意見を集めて、<strong>みんなの希望を見える化</strong>しましょう。',
   ),
   array(
     'number'      => '03',
     'illustration' => 'undraw-calendar.svg',
     'title'       => '日程に落とし込む',
-    'description' => '予定調整モードでカレンダーに予定を登録。<strong>ドラッグ＆ドロップで</strong>順番を変えながら、旅のしおりをみんなで完成させよう。',
+    'description' => '予定調整モードでカレンダーに予定を登録。<br><strong>ドラッグ＆ドロップで</strong>順番を変えながら、旅のしおりをみんなで完成させよう。',
   ),
 );
 ?>
