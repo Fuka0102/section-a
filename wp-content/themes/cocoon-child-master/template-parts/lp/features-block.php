@@ -19,7 +19,7 @@ $lp_features = array(
       '「行きたい！」ボタンで意見を集約',
       '参加人数・希望数をリアルタイムで確認',
     ),
-    'image'       => 'feature_mockup_1.png',
+    'image'       => 'feature_mockup_01.png',
     'reverse'     => false,
   ),
   array(
@@ -32,7 +32,7 @@ $lp_features = array(
       'ドラッグ＆ドロップで予定を移動',
       'Google マップリンク・メモを添付できる',
     ),
-    'image'       => 'feature_mockup_2.png',
+    'image'       => 'feature_mockup_02.png',
     'reverse'     => true,
   ),
   array(
@@ -45,7 +45,7 @@ $lp_features = array(
       'メンバーのアカウント登録不要',
       '人数制限なし',
     ),
-    'image'       => 'feature_mockup_1.png',
+    'image'       => 'feature_mockup_03.png',
     'reverse'     => false,
   ),
   array(
@@ -58,7 +58,7 @@ $lp_features = array(
       'スマホ表示に最適化されたデザイン',
       'プレミアムなら保存数無制限',
     ),
-    'image'       => 'feature_mockup_1.png',
+    'image'       => 'feature_mockup_04.png',
     'reverse'     => true,
   ),
 );

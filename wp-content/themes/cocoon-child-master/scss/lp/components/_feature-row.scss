@@ -190,6 +190,9 @@
   display: block;
   width: 16px;
   height: auto;
+  // feature-checkmark.svgはpreserveAspectRatio="none"かつwidth/height=100%指定のため、
+  // heightをautoだけに任せず縦横比を明示して伸びを防ぐ
+  aspect-ratio: 15.6 / 11.1264;
   flex-shrink: 0;
 }
 
