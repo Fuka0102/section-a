@@ -720,7 +720,8 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-feature-row__description {
-    margin-left: 40px;
+    margin-left: 0;
+    margin-top: 12px;
   }
 }
 
@@ -730,6 +731,11 @@ ol {
   display: flex;
   justify-content: center;
   min-width: 0;
+}
+@media screen and (max-width: 768px) {
+  .lp-feature-row__media {
+    width: 100%;
+  }
 }
 
 .lp-feature-row__callout {
@@ -749,7 +755,15 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-feature-row__callout {
-    margin-left: 40px;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lp-feature-row__callout-break {
+    display: none;
   }
 }
 
@@ -795,8 +809,12 @@ ol {
 
 .lp-feature-row__mockup {
   position: absolute;
+  left: 0;
+  top: 0;
   z-index: 1;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .lp-feature-row__illustration {
