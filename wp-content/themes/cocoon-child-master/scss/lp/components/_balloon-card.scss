@@ -116,10 +116,14 @@
     height: 41.61%;
 
     .lp-problem__balloon-text::after {
-      left: 80%;
+      left: 74%;
       top: 100%;
-      transform: translateX(-50%);
-      border-top: 12px solid v.$color-blue-light;
+      width: 86px;
+      height: 66px;
+      border: none;
+      background-image: url("../assets/images/lp/arrow-balloon1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -140,10 +144,14 @@
     height: 41.61%;
 
     .lp-problem__balloon-text::after {
-      left: 80%;
+      left: 74%;
       bottom: 100%;
-      transform: translateX(-50%);
-      border-bottom: 12px solid v.$color-blue-light;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-image: url("../assets/images/lp/arrow-balloon3.png");
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -168,10 +176,14 @@
     height: 30.6%;
 
     .lp-problem__balloon-text::after {
-      left: 20%;
+      right: 74%;
       top: 100%;
-      transform: translateX(-50%);
-      border-top: 12px solid v.$color-blue-light;
+      width: 86px;
+      height: 66px;
+      border: none;
+      background-image: url("../assets/images/lp/arrow-balloon2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -196,10 +208,14 @@
     height: 27.49%;
 
     .lp-problem__balloon-text::after {
-      left: 20%;
+      right: 85%;
       bottom: 100%;
-      transform: translateX(-50%);
-      border-bottom: 12px solid v.$color-blue-light;
+      width: 32px;
+      height: 18px;
+      border: none;
+      background-image: url("../assets/images/lp/arrow-balloon4.png");
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }
