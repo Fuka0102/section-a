@@ -116,8 +116,8 @@
     height: 41.61%;
 
     .lp-problem__balloon-text::after {
-      left: 74%;
-      top: 100%;
+      right: -30px;
+      top: 20px;
       width: 86px;
       height: 66px;
       border: none;
@@ -214,13 +214,14 @@
   }
 
   @include m.pc {
-    left: -32px;
+    left: 61.92%;
     top: 64.23%;
     width: 38.08%;
     height: 27.49%;
 
     .lp-problem__balloon-text::after {
-      right: 85%;
+      left: -32px;
+      top: 20px;
       bottom: 100%;
       width: 32px;
       height: 18px;
