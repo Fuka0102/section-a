@@ -83,7 +83,9 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: 26.12vw;
+  // デバイス幅で可変にすると高さも連動して変わり、lp-hero__titleと被るパターンが
+  // 際限なく出るため、全デバイス共通でpx固定にしている
+  width: 259px;
   aspect-ratio: 882 / 1089;
   overflow: hidden;
   pointer-events: none;
@@ -93,19 +95,5 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  @include m.sp {
-    width: 82.21vw;
-  }
-
-  // 576px〜768pxは幅を伸ばしすぎるとlp-hero__titleと被るため、幅を抑える
-  @media screen and (min-width: 576px) and (max-width: 768px) {
-    width: 50vw;
-  }
-
-  // 992px以上はvwでの際限ない拡大をやめ、992px時点のサイズ（26.12vw）でpx固定する
-  @media screen and (min-width: 992px) {
-    width: 259px;
   }
 }
