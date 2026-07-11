@@ -17,7 +17,7 @@ $lp_header_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
     <nav class="lp-header__nav" aria-label="グローバルナビゲーション">
       <ul class="lp-header__nav-list">
         <li class="lp-header__nav-item">
-          <a class="lp-header__nav-link" href="#">機能・使い方</a>
+          <a class="lp-header__nav-link" href="<?php echo esc_url( home_url( '/features/' ) ); ?>">機能・使い方</a>
         </li>
         <li class="lp-header__nav-item">
           <a class="lp-header__nav-link" href="#">料金プラン</a>
@@ -30,6 +30,6 @@ $lp_header_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
 
 <div class="lp-sp-bar" id="lp-sp-bar">
   <a class="lp-sp-bar__link" href="#">料金プラン</a>
-  <a class="lp-sp-bar__link" href="#">機能・使い方</a>
+  <a class="lp-sp-bar__link" href="<?php echo esc_url( home_url( '/features/' ) ); ?>">機能・使い方</a>
   <a class="lp-sp-bar__cta" href="#">無料でお試し</a>
 </div>
