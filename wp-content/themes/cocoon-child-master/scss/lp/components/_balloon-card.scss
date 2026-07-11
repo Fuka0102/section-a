@@ -77,23 +77,13 @@
     position: relative;
     width: 100%;
     height: auto;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: -12px;
-      transform: translateX(-50%);
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 12px solid v.$color-blue-light;
-    }
   }
 }
 
+// 吹き出しの尻尾はテキスト自身のedgeに対して絶対配置し、
+// テキストが折り返して箱の実サイズが変わっても必ず本体にくっつくようにする。
 .lp-problem__balloon-text {
+  position: relative;
   background-color: v.$color-blue-light;
   border-radius: 8px;
   padding: 24px;
@@ -101,32 +91,40 @@
   font-size: 18px;
   line-height: 1.7;
   color: v.$color-text;
-}
 
-.lp-problem__balloon-tail {
-  position: absolute;
-  display: block;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
 
   @include m.sp {
-    display: none;
+    &::after {
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      border-top: 12px solid v.$color-blue-light;
+    }
   }
 }
 
-// 各吹き出しの位置・尻尾の向き（Figma実測値を%換算）
+// 各吹き出しの位置・尻尾の向き（Figma実測値を%換算、PCのみ）
 .lp-problem__balloon--1 {
   @include m.pc {
     left: 6.17%;
     top: 0%;
     width: 38.08%;
     height: 41.61%;
-  }
 
-  .lp-problem__balloon-tail {
-    left: 73.57%;
-    top: 60.82%;
-    width: 20.72%;
-    height: 39.04%;
-    transform: rotate(180deg);
+    .lp-problem__balloon-text::after {
+      left: 80%;
+      top: 100%;
+      transform: translateX(-50%);
+      border-top: 12px solid v.$color-blue-light;
+    }
   }
 }
 
@@ -136,14 +134,13 @@
     top: 58.39%;
     width: 38.08%;
     height: 41.61%;
-  }
 
-  .lp-problem__balloon-tail {
-    left: 102.86%;
-    top: 16.37%;
-    width: 7.02%;
-    height: 16.96%;
-    transform: rotate(180deg);
+    .lp-problem__balloon-text::after {
+      left: 80%;
+      bottom: 100%;
+      transform: translateX(-50%);
+      border-bottom: 12px solid v.$color-blue-light;
+    }
   }
 }
 
@@ -153,14 +150,13 @@
     top: 6.33%;
     width: 38.08%;
     height: 30.6%;
-  }
 
-  .lp-problem__balloon-tail {
-    left: 19.29%;
-    top: 46.92%;
-    width: 20.72%;
-    height: 53.08%;
-    transform: scaleY(-1);
+    .lp-problem__balloon-text::after {
+      left: 20%;
+      top: 100%;
+      transform: translateX(-50%);
+      border-top: 12px solid v.$color-blue-light;
+    }
   }
 }
 
@@ -170,13 +166,12 @@
     top: 64.23%;
     width: 38.08%;
     height: 27.49%;
-  }
 
-  .lp-problem__balloon-tail {
-    left: 2.38%;
-    top: 30.97%;
-    width: 7.62%;
-    height: 15.5%;
-    transform: scaleY(-1);
+    .lp-problem__balloon-text::after {
+      left: 20%;
+      bottom: 100%;
+      transform: translateX(-50%);
+      border-bottom: 12px solid v.$color-blue-light;
+    }
   }
 }

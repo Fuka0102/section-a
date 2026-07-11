@@ -21,22 +21,18 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
 
     <div class="lp-problem__balloon lp-problem__balloon--1">
       <p class="lp-problem__balloon-text">行き先は決まったけど、<strong>LINEで予定をやり取りするのが面倒</strong></p>
-      <img class="lp-problem__balloon-tail" src="<?php echo esc_url( $lp_img_base . 'balloon-tail.svg' ); ?>" alt="" loading="lazy">
     </div>
 
     <div class="lp-problem__balloon lp-problem__balloon--2">
       <p class="lp-problem__balloon-text">あれ、この間あの子が行きたいって言ってたお店、<strong>どこで話したんだっけ・・・</strong></p>
-      <img class="lp-problem__balloon-tail" src="<?php echo esc_url( $lp_img_base . 'balloon-tail.svg' ); ?>" alt="" loading="lazy">
     </div>
 
     <div class="lp-problem__balloon lp-problem__balloon--3">
       <p class="lp-problem__balloon-text">いつも<strong>私ばっかり</strong>予定を決めてる気がする・・・</p>
-      <img class="lp-problem__balloon-tail" src="<?php echo esc_url( $lp_img_base . 'balloon-tail.svg' ); ?>" alt="" loading="lazy">
     </div>
 
     <div class="lp-problem__balloon lp-problem__balloon--4">
       <p class="lp-problem__balloon-text">行きたいところを聞いてもみんなから<strong>「どこでもいいよ！」</strong>って返ってくる・・・</p>
-      <img class="lp-problem__balloon-tail" src="<?php echo esc_url( $lp_img_base . 'balloon-tail.svg' ); ?>" alt="" loading="lazy">
     </div>
   </div>
 </section>
