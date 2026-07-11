@@ -321,7 +321,7 @@ ol {
 .lp-hero__title {
   font-family: "Shippori Mincho", serif;
   font-weight: 600;
-  font-size: 80px;
+  font-size: clamp(48px, 37.69px + 2.564vw, 80px);
   line-height: 1.3;
   color: #fff;
   margin-top: 160px;
@@ -329,7 +329,6 @@ ol {
 @media screen and (max-width: 768px) {
   .lp-hero__title {
     margin-top: 0;
-    font-size: 48px;
     line-height: 1.2;
   }
 }
@@ -341,6 +340,7 @@ ol {
 .lp-hero__cta {
   display: inline-flex;
   margin-top: 40px;
+  font-size: clamp(18px, 16.07px + 0.4808vw, 24px);
 }
 @media screen and (max-width: 768px) {
   .lp-hero__cta {
@@ -350,6 +350,28 @@ ol {
     height: 64px;
     margin-top: 32px;
     padding: 0 32px;
+  }
+}
+
+.lp-hero__smartphone {
+  position: absolute;
+  left: 33.21%;
+  bottom: 0;
+  width: 34.36vw;
+  aspect-ratio: 567/532;
+  overflow: hidden;
+  pointer-events: none;
+}
+.lp-hero__smartphone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .lp-hero__smartphone {
+    left: 1.99%;
+    width: 85.07vw;
+    aspect-ratio: 342/408;
   }
 }
 
