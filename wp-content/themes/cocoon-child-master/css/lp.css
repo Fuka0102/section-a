@@ -620,6 +620,25 @@ ol {
   }
 }
 
+.lp-features {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.lp-features__intro {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 22px;
+  line-height: 1.7;
+  color: #141414;
+}
+@media screen and (max-width: 768px) {
+  .lp-features__intro {
+    font-size: 15px;
+  }
+}
+
 .lp-feature-row {
   display: flex;
   align-items: center;
@@ -711,6 +730,85 @@ ol {
   }
 }
 
+.lp-feature-row__title {
+  position: relative;
+  margin-left: 52px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #1d5d9b;
+}
+@media screen and (max-width: 768px) {
+  .lp-feature-row__title {
+    margin-left: 40px;
+    font-size: 24px;
+  }
+}
+
+.lp-feature-row__badge {
+  display: block;
+  width: fit-content;
+  margin-top: 8px;
+  margin-left: 52px;
+  border-radius: 8px;
+  background-color: #f5c076;
+  padding: 4px 8px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .lp-feature-row__badge {
+    margin-left: 0;
+    margin-top: 4px;
+    font-size: 12px;
+  }
+}
+
+.lp-feature-row__checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+  margin-left: 52px;
+  list-style: none;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .lp-feature-row__checklist {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
+.lp-feature-row__checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lp-feature-row__checklist-icon {
+  display: block;
+  width: 16px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.lp-feature-row__checklist-text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #141414;
+}
+@media screen and (max-width: 768px) {
+  .lp-feature-row__checklist-text {
+    font-size: 14px;
+  }
+}
+
 .lp-feature-row__description {
   margin-top: 24px;
   margin-left: 52px;
@@ -785,6 +883,16 @@ ol {
 
 .lp-feature-row__media-inner--arrange {
   aspect-ratio: 436.98/406;
+}
+
+.lp-feature-row__media-inner--feature {
+  max-width: 242px;
+  aspect-ratio: 242/403;
+}
+@media screen and (max-width: 768px) {
+  .lp-feature-row__media-inner--feature {
+    max-width: 140px;
+  }
 }
 
 .lp-feature-row__media-shadow {
@@ -1059,6 +1167,7 @@ ol {
 .lp-hero,
 .lp-problem,
 .lp-about-modes,
+.lp-features,
 .lp-steps,
 .lp-pricing,
 .lp-cta,
