@@ -103,4 +103,9 @@
   @media screen and (min-width: 576px) and (max-width: 768px) {
     width: 50vw;
   }
+
+  // 992px以上はvwでの際限ない拡大をやめ、992px時点のサイズ（26.12vw）でpx固定する
+  @media screen and (min-width: 992px) {
+    width: 259px;
+  }
 }

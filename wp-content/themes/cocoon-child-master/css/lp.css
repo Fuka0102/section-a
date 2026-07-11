@@ -368,6 +368,11 @@ ol {
     width: 50vw;
   }
 }
+@media screen and (min-width: 992px) {
+  .lp-hero__smartphone {
+    width: 259px;
+  }
+}
 
 .lp-problem {
   max-width: 1200px;
