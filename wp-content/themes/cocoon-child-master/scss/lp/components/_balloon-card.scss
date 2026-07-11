@@ -189,6 +189,17 @@
   }
 }
 
+.lp-section-arrow {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.lp-section-arrow__image {
+  width: 97px;
+  height: auto;
+}
+
 .lp-problem__balloon--4 {
   order: 5;
 

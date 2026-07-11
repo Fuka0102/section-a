@@ -107,10 +107,15 @@
 
 .lp-feature-row__description {
   margin-top: 24px;
+  margin-left: 52px;
   font-family: v.$font-noto-sans-jp;
   font-size: 16px;
   line-height: 1.7;
   color: v.$color-text;
+
+  @include m.sp {
+    margin-left: 40px;
+  }
 }
 
 .lp-feature-row__media {
@@ -123,8 +128,8 @@
 
 .lp-feature-row__callout {
   position: absolute;
-  top: -20px;
-  right: 15%;
+  left: 100%;
+  top: 50%;
   z-index: 2;
   margin: 0;
   border-radius: 8px;
@@ -136,17 +141,29 @@
   line-height: 1.7;
   color: v.$color-white;
   text-align: center;
+  white-space: nowrap;
+  transform: translate(20px, -50%);
 
   @include m.sp {
     position: static;
+    display: block;
     width: fit-content;
-    margin: 0 auto;
+    white-space: normal;
+    margin: 8px auto 0;
+    transform: none;
   }
 }
 
+// reverse行はmode-titleが行の右側に来るため、吹き出しは左側に出す
 .lp-feature-row--reverse .lp-feature-row__callout {
-  right: auto;
-  left: 15%;
+  left: auto;
+  right: 100%;
+  transform: translate(-20px, -50%);
+
+  @include m.sp {
+    right: auto;
+    transform: none;
+  }
 }
 
 .lp-feature-row__media-inner {
@@ -194,19 +211,6 @@
   display: block;
 }
 
-.lp-feature-row__media-inner--plan .lp-feature-row__mockup {
-  left: 33.19%;
-  top: 0;
-  width: 47.77%;
-  height: 95.53%;
-}
-
-.lp-feature-row__media-inner--arrange .lp-feature-row__mockup {
-  left: 44.16%;
-  top: 0;
-  width: 44.85%;
-  height: 94.83%;
-}
 
 .lp-feature-row__illustration {
   position: absolute;

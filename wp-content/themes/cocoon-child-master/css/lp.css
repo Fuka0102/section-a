@@ -557,12 +557,23 @@ ol {
   }
 }
 
+.lp-section-arrow {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.lp-section-arrow__image {
+  width: 97px;
+  height: auto;
+}
+
 .lp-problem__balloon--4 {
   order: 5;
 }
 @media screen and (max-width: 768px) {
   .lp-problem__balloon--4 .lp-problem__balloon-text::after {
-    left: -32px;
+    left: 80%;
     top: auto;
     bottom: 100%;
     border-top: none;
@@ -571,7 +582,7 @@ ol {
 }
 @media screen and (min-width: 769px) {
   .lp-problem__balloon--4 {
-    left: 61.92%;
+    left: -32px;
     top: 64.23%;
     width: 38.08%;
     height: 27.49%;
@@ -701,10 +712,16 @@ ol {
 
 .lp-feature-row__description {
   margin-top: 24px;
+  margin-left: 52px;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #141414;
+}
+@media screen and (max-width: 768px) {
+  .lp-feature-row__description {
+    margin-left: 40px;
+  }
 }
 
 .lp-feature-row__media {
@@ -717,8 +734,8 @@ ol {
 
 .lp-feature-row__callout {
   position: absolute;
-  top: -20px;
-  right: 15%;
+  left: 100%;
+  top: 50%;
   z-index: 2;
   margin: 0;
   border-radius: 8px;
@@ -730,18 +747,30 @@ ol {
   line-height: 1.7;
   color: #fff;
   text-align: center;
+  white-space: nowrap;
+  transform: translate(20px, -50%);
 }
 @media screen and (max-width: 768px) {
   .lp-feature-row__callout {
     position: static;
+    display: block;
     width: fit-content;
-    margin: 0 auto;
+    white-space: normal;
+    margin: 8px auto 0;
+    transform: none;
   }
 }
 
 .lp-feature-row--reverse .lp-feature-row__callout {
-  right: auto;
-  left: 15%;
+  left: auto;
+  right: 100%;
+  transform: translate(-20px, -50%);
+}
+@media screen and (max-width: 768px) {
+  .lp-feature-row--reverse .lp-feature-row__callout {
+    right: auto;
+    transform: none;
+  }
 }
 
 .lp-feature-row__media-inner {
@@ -788,20 +817,6 @@ ol {
   position: absolute;
   z-index: 1;
   display: block;
-}
-
-.lp-feature-row__media-inner--plan .lp-feature-row__mockup {
-  left: 33.19%;
-  top: 0;
-  width: 47.77%;
-  height: 95.53%;
-}
-
-.lp-feature-row__media-inner--arrange .lp-feature-row__mockup {
-  left: 44.16%;
-  top: 0;
-  width: 44.85%;
-  height: 94.83%;
 }
 
 .lp-feature-row__illustration {

@@ -18,6 +18,9 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 <?php get_template_part( 'template-parts/lp/hero' ); ?>
 <?php get_template_part( 'template-parts/lp/problem' ); ?>
+<div class="lp-section-arrow">
+  <img class="lp-section-arrow__image" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/lp/arrow.png' ); ?>" alt="" loading="lazy">
+</div>
 <?php get_template_part( 'template-parts/lp/about-modes' ); ?>
 <?php get_template_part( 'template-parts/lp/steps' ); ?>
 <?php get_template_part( 'template-parts/lp/pricing-table', null, array(

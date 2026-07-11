@@ -26,6 +26,7 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
         <h3 class="lp-feature-row__mode-title">
           <span class="lp-feature-row__mode-title-en">PLAN</span>
           <span class="lp-feature-row__mode-title-ja">モード</span>
+          <span class="lp-feature-row__callout">まずはみんなどこ行きたい？</span>
         </h3>
       </div>
       <p class="lp-feature-row__description">
@@ -33,11 +34,8 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
       </p>
     </div>
     <div class="lp-feature-row__media">
-      <p class="lp-feature-row__callout">まずはみんなどこ行きたい？</p>
       <div class="lp-feature-row__media-inner lp-feature-row__media-inner--plan">
-        <span class="lp-feature-row__media-shadow"></span>
-        <img class="lp-feature-row__mockup" src="<?php echo esc_url( $lp_img_base . 'phone-mockup-plan.png' ); ?>" alt="" loading="lazy">
-        <img class="lp-feature-row__illustration" src="<?php echo esc_url( $lp_img_base . 'undraw-lightbulb-moment.svg' ); ?>" alt="" loading="lazy">
+        <img class="lp-feature-row__mockup" src="<?php echo esc_url( $lp_img_base . 'plan_image.png' ); ?>" alt="" loading="lazy">
       </div>
     </div>
   </div>
@@ -49,6 +47,7 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
         <h3 class="lp-feature-row__mode-title">
           <span class="lp-feature-row__mode-title-en">ARRANGE</span>
           <span class="lp-feature-row__mode-title-ja">モード</span>
+          <span class="lp-feature-row__callout">みんなで旅行のスケジュールを<br>作ってみよう</span>
         </h3>
       </div>
       <p class="lp-feature-row__description">
@@ -56,11 +55,8 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
       </p>
     </div>
     <div class="lp-feature-row__media">
-      <p class="lp-feature-row__callout">みんなで旅行のスケジュールを<br>作ってみよう</p>
       <div class="lp-feature-row__media-inner lp-feature-row__media-inner--arrange">
-        <span class="lp-feature-row__media-shadow"></span>
-        <img class="lp-feature-row__mockup" src="<?php echo esc_url( $lp_img_base . 'phone-mockup-arrange.png' ); ?>" alt="" loading="lazy">
-        <img class="lp-feature-row__illustration" src="<?php echo esc_url( $lp_img_base . 'undraw-publish-post.svg' ); ?>" alt="" loading="lazy">
+        <img class="lp-feature-row__mockup" src="<?php echo esc_url( $lp_img_base . 'arrange_image.png' ); ?>" alt="" loading="lazy">
       </div>
     </div>
   </div>
