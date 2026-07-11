@@ -345,10 +345,10 @@ ol {
 
 .lp-hero__smartphone {
   position: absolute;
-  left: 33.21%;
+  left: 37.9%;
   bottom: 0;
-  width: 34.36vw;
-  aspect-ratio: 567/532;
+  width: 24.98vw;
+  aspect-ratio: 824/1064;
   overflow: hidden;
   pointer-events: none;
 }
@@ -359,9 +359,8 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-hero__smartphone {
-    left: 1.99%;
-    width: 85.07vw;
-    aspect-ratio: 342/408;
+    left: 5.22%;
+    width: 78.62vw;
   }
 }
 

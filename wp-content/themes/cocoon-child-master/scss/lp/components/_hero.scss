@@ -81,10 +81,12 @@
 
 .lp-hero__smartphone {
   position: absolute;
-  left: 33.21%; // 548 / 1650（mv frame内での相対x）
+  // 画像を余白なしで再書き出し（824×1064）したため、旧バウンディングボックスと縦の高さが
+  // 揃うよう幅を再計算し、中心位置が変わらないようleftも再計算している
+  left: 37.9%;
   bottom: 0;
-  width: 34.36vw; // 567 / 1650
-  aspect-ratio: 567 / 532;
+  width: 24.98vw;
+  aspect-ratio: 824 / 1064;
   overflow: hidden;
   pointer-events: none;
 
@@ -95,8 +97,7 @@
   }
 
   @include m.sp {
-    left: 1.99%; // 8 / 402
-    width: 85.07vw; // 342 / 402
-    aspect-ratio: 342 / 408;
+    left: 5.22%;
+    width: 78.62vw;
   }
 }
