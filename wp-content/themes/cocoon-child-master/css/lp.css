@@ -865,7 +865,6 @@ ol {
 
 .lp-steps__list {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 24px;
   margin-top: 48px;
@@ -873,6 +872,7 @@ ol {
 @media screen and (max-width: 768px) {
   .lp-steps__list {
     flex-direction: column;
+    align-items: center;
     gap: 16px;
   }
 }
@@ -975,7 +975,7 @@ ol {
 .lp-pricing--card .lp-pricing__inner {
   background-color: #fff;
   border-radius: 24px;
-  padding: 48px 40px 80px;
+  padding: 48px 40px 140px;
 }
 @media screen and (max-width: 768px) {
   .lp-pricing--card .lp-pricing__inner {
@@ -998,9 +998,10 @@ ol {
   bottom: 0;
   width: 176px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .lp-pricing__illustration {
-    display: none;
+    left: 10px;
+    bottom: 0;
   }
 }
 
