@@ -277,14 +277,14 @@ ol {
   position: relative;
   background-size: cover;
   background-position: center;
-  aspect-ratio: 1650/982;
+  height: 100vh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .lp-hero {
-    aspect-ratio: 402/874;
     display: block;
     padding: 0;
   }
