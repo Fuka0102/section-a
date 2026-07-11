@@ -166,6 +166,10 @@
   @include m.sp {
     .lp-problem__balloon-text::after {
       left: 20%;
+      top: auto;
+      bottom: 100%;
+      border-top: none;
+      border-bottom: 12px solid v.$color-blue-light;
     }
   }
 
@@ -190,6 +194,10 @@
   @include m.sp {
     .lp-problem__balloon-text::after {
       left: 80%;
+      top: auto;
+      bottom: 100%;
+      border-top: none;
+      border-bottom: 12px solid v.$color-blue-light;
     }
   }
 

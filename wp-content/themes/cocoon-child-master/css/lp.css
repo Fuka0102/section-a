@@ -536,6 +536,10 @@ ol {
 @media screen and (max-width: 768px) {
   .lp-problem__balloon--3 .lp-problem__balloon-text::after {
     left: 20%;
+    top: auto;
+    bottom: 100%;
+    border-top: none;
+    border-bottom: 12px solid #8dddff;
   }
 }
 @media screen and (min-width: 769px) {
@@ -559,6 +563,10 @@ ol {
 @media screen and (max-width: 768px) {
   .lp-problem__balloon--4 .lp-problem__balloon-text::after {
     left: 80%;
+    top: auto;
+    bottom: 100%;
+    border-top: none;
+    border-bottom: 12px solid #8dddff;
   }
 }
 @media screen and (min-width: 769px) {
