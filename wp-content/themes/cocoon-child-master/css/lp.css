@@ -924,18 +924,18 @@ ol {
   color: #141414;
 }
 
-.lp-step-card__underline {
-  display: block;
-  width: 48px;
-  height: 4px;
-  background-color: #f5c076;
-}
-
 .lp-step-card__description {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #141414;
+}
+.lp-step-card__description strong {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5em;
+  text-decoration-color: rgba(245, 192, 118, 0.5);
+  text-underline-offset: -0.2em;
+  text-decoration-skip-ink: none;
 }
 
 .lp-pricing {

@@ -84,16 +84,18 @@
   color: v.$color-text;
 }
 
-.lp-step-card__underline {
-  display: block;
-  width: 48px;
-  height: 4px;
-  background-color: v.$color-yellow-accent;
-}
-
 .lp-step-card__description {
   font-family: v.$font-noto-sans-jp;
   font-size: 16px;
   line-height: 1.7;
   color: v.$color-text;
+
+  // マーカーで線を引いたような強調表現 https://zenn.dev/catnose99/articles/3239ba0d49cda9
+  strong {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5em;
+    text-decoration-color: rgba(v.$color-yellow-accent, 0.5);
+    text-underline-offset: -0.2em;
+    text-decoration-skip-ink: none;
+  }
 }
