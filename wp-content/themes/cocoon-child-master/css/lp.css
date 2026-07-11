@@ -514,7 +514,8 @@ ol {
     height: 41.61%;
   }
   .lp-problem__balloon--2 .lp-problem__balloon-text::after {
-    left: 74%;
+    right: -30px;
+    top: 20px;
     bottom: 100%;
     width: 30px;
     height: 30px;
@@ -561,7 +562,7 @@ ol {
 }
 @media screen and (max-width: 768px) {
   .lp-problem__balloon--4 .lp-problem__balloon-text::after {
-    left: 80%;
+    left: -32px;
     top: auto;
     bottom: 100%;
     border-top: none;
