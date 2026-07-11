@@ -948,7 +948,7 @@ ol {
 
 .lp-pricing__inner {
   position: relative;
-  max-width: 1200px;
+  max-width: 968px;
   margin: 0 auto;
 }
 
@@ -992,6 +992,7 @@ ol {
 .lp-pricing-table {
   width: 100%;
   min-width: 556px;
+  max-width: 556px;
   border-collapse: collapse;
 }
 
