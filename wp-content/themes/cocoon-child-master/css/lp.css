@@ -931,6 +931,7 @@ ol {
   color: #141414;
 }
 .lp-step-card__description strong {
+  color: #f5c076;
   text-decoration: underline;
   text-decoration-thickness: 0.5em;
   text-decoration-color: rgba(245, 192, 118, 0.5);

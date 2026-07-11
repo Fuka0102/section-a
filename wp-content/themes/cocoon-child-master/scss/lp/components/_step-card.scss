@@ -92,6 +92,7 @@
 
   // マーカーで線を引いたような強調表現 https://zenn.dev/catnose99/articles/3239ba0d49cda9
   strong {
+    color: v.$color-yellow-accent;
     text-decoration: underline;
     text-decoration-thickness: 0.5em;
     text-decoration-color: rgba(v.$color-yellow-accent, 0.5);
