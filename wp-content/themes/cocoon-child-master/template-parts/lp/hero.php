@@ -9,7 +9,7 @@ $lp_hero_smartphone_image = get_stylesheet_directory_uri() . '/assets/images/lp/
 ?>
 <section class="lp-hero" style="background-image: url(<?php echo esc_url( $lp_hero_image ); ?>);">
   <?php get_template_part( 'template-parts/lp/header' ); ?>
-  <div class="lp-hero__inner">
+  <div class="lp-hero__inner js-fade-in">
     <h1 class="lp-hero__title">
       友達と、一緒に<span class="lp-hero__title-accent">“旅’’</span>をつくろう。
     </h1>

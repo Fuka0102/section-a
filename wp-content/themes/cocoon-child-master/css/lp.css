@@ -67,6 +67,11 @@ ol {
 .lp-header__logo {
   display: block;
   line-height: 0;
+  transition: opacity 0.2s ease;
+}
+
+.lp-header__logo:hover {
+  opacity: 0.85;
 }
 
 .lp-header__logo-image {
@@ -106,6 +111,11 @@ ol {
   font-size: 18px;
   color: #fff;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lp-header__nav-link:hover {
+  color: #f4a12d;
 }
 
 .lp-sp-bar {
