@@ -1187,6 +1187,140 @@ ol {
   background-color: #70a5ff;
 }
 
+.lp-faq {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.lp-faq__heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.lp-faq__heading-decoration {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-88%, -50%);
+  font-family: "DIN 2014", sans-serif;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 1;
+  color: rgba(112, 213, 255, 0.5);
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .lp-faq__heading-decoration {
+    font-size: 64px;
+  }
+}
+
+.lp-faq__title {
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #1d5d9b;
+}
+@media screen and (max-width: 768px) {
+  .lp-faq__title {
+    font-size: 28px;
+  }
+}
+
+.lp-faq__list {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 910px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lp-faq__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 24px;
+}
+
+.lp-faq__question {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.lp-faq__question-text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #141414;
+}
+@media screen and (max-width: 768px) {
+  .lp-faq__question-text {
+    font-size: 16px;
+  }
+}
+
+.lp-faq__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .lp-faq__icon {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+}
+
+.lp-faq__icon--q {
+  background-color: #70a5ff;
+}
+
+.lp-faq__icon--a {
+  background-color: #f4a12d;
+}
+
+.lp-faq__answer {
+  display: none;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.lp-faq__item.is-open .lp-faq__answer {
+  display: flex;
+}
+
+.lp-faq__answer-text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #141414;
+}
+@media screen and (max-width: 768px) {
+  .lp-faq__answer-text {
+    font-size: 14px;
+  }
+}
+
 .lp-header,
 .lp-hero,
 .lp-page-hero,
@@ -1195,6 +1329,7 @@ ol {
 .lp-features,
 .lp-steps,
 .lp-pricing,
+.lp-faq,
 .lp-cta,
 .lp-footer {
   font-feature-settings: "palt" 1;

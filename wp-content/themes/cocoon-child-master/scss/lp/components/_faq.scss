@@ -1,0 +1,132 @@
+@use "../variables" as v;
+@use "../mixins" as m;
+
+.lp-faq {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.lp-faq__heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+// 「FAQ」の大きな薄字はlp-feature-row__numberと同じ配色（rgba(112, 213, 255, 0.5)）を踏襲
+.lp-faq__heading-decoration {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-88%, -50%);
+  font-family: v.$font-din;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 1;
+  color: rgba(112, 213, 255, 0.5);
+  white-space: nowrap;
+
+  @include m.sp {
+    font-size: 64px;
+  }
+}
+
+.lp-faq__title {
+  position: relative;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 48px;
+  color: v.$color-blue-dark;
+
+  @include m.sp {
+    font-size: 28px;
+  }
+}
+
+.lp-faq__list {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 910px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lp-faq__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 24px;
+}
+
+.lp-faq__question {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.lp-faq__question-text {
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 22px;
+  color: v.$color-text;
+
+  @include m.sp {
+    font-size: 16px;
+  }
+}
+
+.lp-faq__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-family: v.$font-noto-sans-jp;
+  font-weight: 700;
+  font-size: 24px;
+  color: v.$color-white;
+
+  @include m.sp {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+}
+
+.lp-faq__icon--q {
+  background-color: v.$color-blue-primary;
+}
+
+.lp-faq__icon--a {
+  background-color: v.$color-orange;
+}
+
+.lp-faq__answer {
+  display: none;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.lp-faq__item.is-open .lp-faq__answer {
+  display: flex;
+}
+
+.lp-faq__answer-text {
+  font-family: v.$font-noto-sans-jp;
+  font-size: 18px;
+  line-height: 1.7;
+  color: v.$color-text;
+
+  @include m.sp {
+    font-size: 14px;
+  }
+}
