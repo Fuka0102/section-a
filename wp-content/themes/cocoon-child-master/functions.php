@@ -31,6 +31,16 @@ function tabico_lp_enqueue_assets() {
     file_exists( $lp_css_file ) ? filemtime( $lp_css_file ) : false
   );
 
+  //--lp-vhはCSSペイント前に確定させたいのでheadで読み込む（in_footer:false）
+  $lp_viewport_height_js_file = get_stylesheet_directory() . '/js/lp/viewport-height.js';
+  wp_enqueue_script(
+    'tabico-lp-viewport-height',
+    get_stylesheet_directory_uri() . '/js/lp/viewport-height.js',
+    array(),
+    file_exists( $lp_viewport_height_js_file ) ? filemtime( $lp_viewport_height_js_file ) : false,
+    false
+  );
+
   $lp_sp_bar_js_file = get_stylesheet_directory() . '/js/lp/sp-bar.js';
   wp_enqueue_script(
     'tabico-lp-sp-bar',

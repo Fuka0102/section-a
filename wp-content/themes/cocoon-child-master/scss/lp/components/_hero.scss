@@ -6,7 +6,9 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-  height: 100svh;
+  // iOS Safariのdvh/svhはツールバー状態やバージョンで挙動が揺れるため、
+  // js/lp/viewport-height.jsで実測したwindow.innerHeightを--lp-vhに固定して使う
+  height: calc(var(--lp-vh, 1vh) * 100);
   display: flex;
   align-items: center;
   justify-content: center;
