@@ -3,6 +3,7 @@
  * LP共通ヘッダー（グロナビ）
  * トップ／機能紹介／料金プランの3ページで共通利用する。
  * SPはグロナビの代わりに画面下部固定のlp-sp-barを表示する（js/lp/sp-bar.jsでスクロール停止時にスライド表示）。
+ * lp-back-to-topはPCのみ表示。一定量スクロールしたら現れ、クリックでページトップへスムーズスクロールする（js/lp/back-to-top.js）。
  */
 if ( !defined( 'ABSPATH' ) ) exit;
 
@@ -32,3 +33,7 @@ $lp_header_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
   <a class="lp-sp-bar__link" href="<?php echo esc_url( home_url( '/features/' ) ); ?>">機能・使い方</a>
   <a class="lp-sp-bar__cta" href="#">無料でお試し</a>
 </div>
+
+<button type="button" class="lp-back-to-top" id="lp-back-to-top" aria-label="ページトップへ戻る">
+  <span class="lp-back-to-top__arrow"></span>
+</button>
