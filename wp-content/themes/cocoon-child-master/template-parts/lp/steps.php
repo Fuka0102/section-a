@@ -39,7 +39,7 @@ $lp_steps = array(
       <?php if ( $lp_step_index > 0 ) : ?>
         <img class="lp-steps__connector" src="<?php echo esc_url( $lp_img_base . 'step_arrow0' . $lp_step_index . '.png' ); ?>" alt="" loading="lazy">
       <?php endif; ?>
-      <div class="lp-step-card">
+      <div class="lp-step-card js-fade-in">
         <span class="lp-step-card__badge">STEP<span class="lp-step-card__badge-number"><?php echo esc_html( $lp_step['number'] ); ?></span></span>
         <img class="lp-step-card__illustration" src="<?php echo esc_url( $lp_img_base . $lp_step['illustration'] ); ?>" alt="" loading="lazy">
         <h3 class="lp-step-card__title"><?php echo esc_html( $lp_step['title'] ); ?></h3>

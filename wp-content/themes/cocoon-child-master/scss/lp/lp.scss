@@ -17,6 +17,7 @@
 @use "components/step-card";
 @use "components/pricing-table";
 @use "components/faq";
+@use "components/scroll-reveal";
 
 // 日本語テキストの字間を詰めて読みやすくする（LP全セクション共通）
 .lp-header,

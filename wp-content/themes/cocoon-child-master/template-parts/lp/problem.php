@@ -14,23 +14,23 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
   ) ); ?>
 
   <div class="lp-problem__scene">
-    <div class="lp-problem__illustration">
+    <div class="lp-problem__illustration js-fade-in">
       <img class="lp-problem__illustration-image" src="<?php echo esc_url( $lp_img_base . 'onayami_woman.png' ); ?>" alt="" loading="lazy">
     </div>
 
-    <div class="lp-problem__balloon lp-problem__balloon--1">
+    <div class="lp-problem__balloon lp-problem__balloon--1 js-fade-in">
       <p class="lp-problem__balloon-text">行き先は決まったけど、<strong>LINEで予定をやり取りするのが面倒</strong></p>
     </div>
 
-    <div class="lp-problem__balloon lp-problem__balloon--2">
+    <div class="lp-problem__balloon lp-problem__balloon--2 js-fade-in">
       <p class="lp-problem__balloon-text">あれ、この間あの子が行きたいって言ってたお店、<strong>どこで話したんだっけ・・・</strong></p>
     </div>
 
-    <div class="lp-problem__balloon lp-problem__balloon--3">
+    <div class="lp-problem__balloon lp-problem__balloon--3 js-fade-in">
       <p class="lp-problem__balloon-text">いつも<strong>私ばっかり</strong>予定を決めてる気がする・・・</p>
     </div>
 
-    <div class="lp-problem__balloon lp-problem__balloon--4">
+    <div class="lp-problem__balloon lp-problem__balloon--4 js-fade-in">
       <p class="lp-problem__balloon-text">行きたいところを聞いてもみんなから<strong>「どこでもいいよ！」</strong>って返ってくる・・・</p>
     </div>
   </div>

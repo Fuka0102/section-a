@@ -8,7 +8,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 $lp_cta_image_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
 ?>
 <section class="lp-cta">
-  <div class="lp-cta__inner">
+  <div class="lp-cta__inner js-fade-in">
     <?php get_template_part( 'template-parts/lp/partials/section-heading', null, array(
       'eyebrow' => 'Let’s create our plan!',
       'title'   => 'さぁTABICOで計画しよう',

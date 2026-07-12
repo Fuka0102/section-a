@@ -19,7 +19,7 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
     みんなで決めて、みんなで楽しむ旅をつくろう。
   </p>
 
-  <div class="lp-feature-row">
+  <div class="lp-feature-row js-fade-in">
     <div class="lp-feature-row__content">
       <div class="lp-feature-row__heading">
         <span class="lp-feature-row__number">01</span>
@@ -40,7 +40,7 @@ $lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
     </div>
   </div>
 
-  <div class="lp-feature-row lp-feature-row--reverse">
+  <div class="lp-feature-row lp-feature-row--reverse js-fade-in">
     <div class="lp-feature-row__content">
       <div class="lp-feature-row__heading">
         <span class="lp-feature-row__number">02</span>

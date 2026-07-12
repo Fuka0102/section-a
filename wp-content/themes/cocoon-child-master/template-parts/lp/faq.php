@@ -34,7 +34,7 @@ $lp_faq_items = array(
 
   <div class="lp-faq__list">
     <?php foreach ( $lp_faq_items as $lp_faq_index => $lp_faq_item ) : ?>
-      <div class="lp-faq__item">
+      <div class="lp-faq__item js-fade-in">
         <button type="button" class="lp-faq__question" aria-expanded="false" aria-controls="lp-faq-answer-<?php echo esc_attr( $lp_faq_index ); ?>">
           <img class="lp-faq__icon" src="<?php echo esc_url( $lp_img_base . 'icon_q.png' ); ?>" alt="">
           <span class="lp-faq__question-text"><?php echo esc_html( $lp_faq_item['question'] ); ?></span>

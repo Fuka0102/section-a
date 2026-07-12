@@ -41,7 +41,7 @@ $lp_pricing_rows = array(
 
     <p class="lp-pricing__subtitle"><?php echo wp_kses_post( $lp_subtitle ); ?></p>
 
-    <div class="lp-pricing-table__wrapper">
+    <div class="lp-pricing-table__wrapper js-fade-in">
       <table class="lp-pricing-table">
         <thead>
           <tr>

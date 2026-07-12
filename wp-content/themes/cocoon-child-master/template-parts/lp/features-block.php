@@ -74,7 +74,7 @@ $lp_features = array(
   </p>
 
   <?php foreach ( $lp_features as $lp_feature ) : ?>
-    <div class="lp-feature-row<?php echo $lp_feature['reverse'] ? ' lp-feature-row--reverse' : ''; ?>">
+    <div class="lp-feature-row js-fade-in<?php echo $lp_feature['reverse'] ? ' lp-feature-row--reverse' : ''; ?>">
       <div class="lp-feature-row__content">
         <div class="lp-feature-row__heading">
           <span class="lp-feature-row__number"><?php echo esc_html( $lp_feature['number'] ); ?></span>

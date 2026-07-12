@@ -40,6 +40,15 @@ function tabico_lp_enqueue_assets() {
     true
   );
 
+  $lp_scroll_reveal_js_file = get_stylesheet_directory() . '/js/lp/scroll-reveal.js';
+  wp_enqueue_script(
+    'tabico-lp-scroll-reveal',
+    get_stylesheet_directory_uri() . '/js/lp/scroll-reveal.js',
+    array(),
+    file_exists( $lp_scroll_reveal_js_file ) ? filemtime( $lp_scroll_reveal_js_file ) : false,
+    true
+  );
+
   //FAQアコーディオンは料金プランページのみで使用
   if ( is_page_template( 'page-templates/lp-pricing.php' ) ) {
     $lp_faq_js_file = get_stylesheet_directory() . '/js/lp/faq-accordion.js';
