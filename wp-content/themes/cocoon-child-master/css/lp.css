@@ -323,7 +323,7 @@ ol {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  height: 100dvh;
+  height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1166,6 +1166,11 @@ ol {
   .lp-pricing__illustration {
     left: 10px;
     bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lp-pricing__illustration {
+    display: none;
   }
 }
 

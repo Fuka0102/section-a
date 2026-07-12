@@ -44,6 +44,10 @@
     left: 10px;
     bottom: 0;
   }
+
+  @include m.sp {
+    display: none;
+  }
 }
 
 .lp-pricing-table__wrapper {
