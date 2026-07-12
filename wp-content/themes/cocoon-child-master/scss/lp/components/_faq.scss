@@ -82,31 +82,16 @@
 }
 
 .lp-faq__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   flex-shrink: 0;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  font-family: v.$font-noto-sans-jp;
-  font-weight: 700;
-  font-size: 24px;
-  color: v.$color-white;
+  object-fit: contain;
 
   @include m.sp {
     width: 28px;
     height: 28px;
-    font-size: 16px;
   }
-}
-
-.lp-faq__icon--q {
-  background-color: v.$color-blue-primary;
-}
-
-.lp-faq__icon--a {
-  background-color: v.$color-orange;
 }
 
 .lp-faq__answer {

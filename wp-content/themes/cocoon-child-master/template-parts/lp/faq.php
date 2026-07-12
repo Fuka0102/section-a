@@ -5,6 +5,8 @@
  */
 if ( !defined( 'ABSPATH' ) ) exit;
 
+$lp_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
+
 $lp_faq_items = array(
   array(
     'question' => '無料プランでどこまで使えますか？',
@@ -34,11 +36,11 @@ $lp_faq_items = array(
     <?php foreach ( $lp_faq_items as $lp_faq_index => $lp_faq_item ) : ?>
       <div class="lp-faq__item">
         <button type="button" class="lp-faq__question" aria-expanded="false" aria-controls="lp-faq-answer-<?php echo esc_attr( $lp_faq_index ); ?>">
-          <span class="lp-faq__icon lp-faq__icon--q">Q</span>
+          <img class="lp-faq__icon" src="<?php echo esc_url( $lp_img_base . 'icon_q.png' ); ?>" alt="">
           <span class="lp-faq__question-text"><?php echo esc_html( $lp_faq_item['question'] ); ?></span>
         </button>
         <div class="lp-faq__answer" id="lp-faq-answer-<?php echo esc_attr( $lp_faq_index ); ?>">
-          <span class="lp-faq__icon lp-faq__icon--a">A</span>
+          <img class="lp-faq__icon" src="<?php echo esc_url( $lp_img_base . 'icon_a.png' ); ?>" alt="">
           <p class="lp-faq__answer-text"><?php echo esc_html( $lp_faq_item['answer'] ); ?></p>
         </div>
       </div>
