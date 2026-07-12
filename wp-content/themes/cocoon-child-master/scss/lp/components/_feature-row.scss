@@ -279,14 +279,13 @@
   aspect-ratio: 436.98 / 406;
 }
 
-// feature_mockup_*.pngは影込みで書き出し済みのため、幅・高さいっぱいに表示すればよい
-.lp-feature-row__media-inner--feature {
-  max-width: 242px;
-  aspect-ratio: 242 / 403;
+// feature_mockup_*.pngは影込みで書き出し済みのため、実際の画像比率に合わせて表示すればよい
+.lp-feature-row__media-inner--feature-03 {
+  aspect-ratio: 768 / 810;
+}
 
-  @include m.sp {
-    max-width: 140px;
-  }
+.lp-feature-row__media-inner--feature-04 {
+  aspect-ratio: 805 / 806;
 }
 
 .lp-feature-row__media-shadow {

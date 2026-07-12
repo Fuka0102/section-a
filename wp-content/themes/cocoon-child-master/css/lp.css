@@ -907,14 +907,12 @@ ol {
   aspect-ratio: 436.98/406;
 }
 
-.lp-feature-row__media-inner--feature {
-  max-width: 242px;
-  aspect-ratio: 242/403;
+.lp-feature-row__media-inner--feature-03 {
+  aspect-ratio: 768/810;
 }
-@media screen and (max-width: 768px) {
-  .lp-feature-row__media-inner--feature {
-    max-width: 140px;
-  }
+
+.lp-feature-row__media-inner--feature-04 {
+  aspect-ratio: 805/806;
 }
 
 .lp-feature-row__media-shadow {

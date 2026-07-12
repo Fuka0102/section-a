@@ -20,6 +20,7 @@ $lp_features = array(
       '<strong>参加人数・希望数をリアルタイムで確認</strong>',
     ),
     'image'       => 'plan_image.png',
+    'media_class' => 'plan',
     'reverse'     => false,
   ),
   array(
@@ -33,6 +34,7 @@ $lp_features = array(
       'Google マップリンク・メモを添付できる',
     ),
     'image'       => 'arrange_image.png',
+    'media_class' => 'arrange',
     'reverse'     => true,
   ),
   array(
@@ -46,6 +48,7 @@ $lp_features = array(
       '<strong>人数制限なし</strong>',
     ),
     'image'       => 'feature_mockup_03.png',
+    'media_class' => 'feature-03',
     'reverse'     => false,
   ),
   array(
@@ -59,6 +62,7 @@ $lp_features = array(
       'プレミアムなら保存数無制限',
     ),
     'image'       => 'feature_mockup_04.png',
+    'media_class' => 'feature-04',
     'reverse'     => true,
   ),
 );
@@ -90,7 +94,7 @@ $lp_features = array(
         </ul>
       </div>
       <div class="lp-feature-row__media">
-        <div class="lp-feature-row__media-inner lp-feature-row__media-inner--feature">
+        <div class="lp-feature-row__media-inner lp-feature-row__media-inner--<?php echo esc_attr( $lp_feature['media_class'] ); ?>">
           <img class="lp-feature-row__mockup" src="<?php echo esc_url( $lp_img_base . $lp_feature['image'] ); ?>" alt="" loading="lazy">
         </div>
       </div>
