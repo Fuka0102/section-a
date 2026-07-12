@@ -1258,6 +1258,7 @@ ol {
 }
 
 .lp-faq__question-text {
+  flex: 1;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1267,6 +1268,21 @@ ol {
   .lp-faq__question-text {
     font-size: 16px;
   }
+}
+
+.lp-faq__question::after {
+  content: "";
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #1d5d9b;
+  border-bottom: 2px solid #1d5d9b;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.lp-faq__item.is-open .lp-faq__question::after {
+  transform: rotate(225deg);
 }
 
 .lp-faq__icon {

@@ -71,6 +71,7 @@
 }
 
 .lp-faq__question-text {
+  flex: 1;
   font-family: v.$font-noto-sans-jp;
   font-weight: 700;
   font-size: 22px;
@@ -79,6 +80,22 @@
   @include m.sp {
     font-size: 16px;
   }
+}
+
+// アコーディオンの開閉矢印。正方形を45deg回転させたV字（開いたら上向きに反転）
+.lp-faq__question::after {
+  content: "";
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid v.$color-blue-dark;
+  border-bottom: 2px solid v.$color-blue-dark;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.lp-faq__item.is-open .lp-faq__question::after {
+  transform: rotate(225deg);
 }
 
 .lp-faq__icon {
