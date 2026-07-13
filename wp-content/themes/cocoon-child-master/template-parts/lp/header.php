@@ -29,9 +29,9 @@ $lp_header_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
 </header>
 
 <div class="lp-sp-bar" id="lp-sp-bar">
-  <button type="button" class="lp-sp-bar__logo js-back-to-top" aria-label="ページトップへ戻る">
+  <a class="lp-sp-bar__logo js-back-to-top" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="TABICOトップへ戻る">
     <img class="lp-sp-bar__logo-image" src="<?php echo esc_url( $lp_header_img_base . 'logo.png' ); ?>" alt="TABICO">
-  </button>
+  </a>
   <a class="lp-sp-bar__link" href="<?php echo esc_url( home_url( '/pricing/' ) ); ?>">料金プラン</a>
   <a class="lp-sp-bar__link" href="<?php echo esc_url( home_url( '/features/' ) ); ?>">機能・使い方</a>
   <a class="lp-sp-bar__cta" href="#">無料でお試し</a>
