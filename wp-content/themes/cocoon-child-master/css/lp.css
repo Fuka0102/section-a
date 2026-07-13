@@ -1059,7 +1059,9 @@ ol {
 }
 
 .lp-steps__connector {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   align-self: center;
   flex-shrink: 0;
   width: 24px;
@@ -1068,7 +1070,17 @@ ol {
   .lp-steps__connector {
     width: 38px;
     height: 38px;
-    object-fit: contain;
+  }
+}
+
+.lp-steps__connector-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .lp-steps__connector-image {
+    width: 16px;
     transform: rotate(90deg);
   }
 }

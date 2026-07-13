@@ -20,20 +20,31 @@
   }
 }
 
+// lp-steps__connectorはimgを囲むラッパー。回転はimg側にだけ適用し、
+// ラッパー自体は回転しない正方形の箱として領域を確保することで、
+// 画像を縮小せず自然な解像度のまま描画しつつ、隣接カードとの重なりも防ぐ
+// （object-fit:containで無理に小さい枠へ収めると、先端が潰れて見えるため不採用）
 .lp-steps__connector {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   align-self: center;
   flex-shrink: 0;
   width: 24px;
 
-  // rotateは要素の見た目だけを回転させ、レイアウト上の占有幅は回転前の値のまま
-  // なので、width:16pxのまま回転させると実際の表示幅（元の高さ38px相当）が
-  // 確保領域からはみ出しiPhoneなどでは隣接要素に隠れて切れて見える。
-  // 正方形の枠にしてobject-fit:containで収めれば、回転しても占有領域が変わらない
   @include m.sp {
     width: 38px;
     height: 38px;
-    object-fit: contain;
+  }
+}
+
+.lp-steps__connector-image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @include m.sp {
+    width: 16px;
     transform: rotate(90deg);
   }
 }
