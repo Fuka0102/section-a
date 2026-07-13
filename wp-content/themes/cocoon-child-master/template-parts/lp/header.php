@@ -11,7 +11,7 @@ $lp_header_img_base = get_stylesheet_directory_uri() . '/assets/images/lp/';
 ?>
 <header class="lp-header">
   <div class="lp-header__inner">
-    <a class="lp-header__logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <a class="lp-header__logo js-back-to-top" href="<?php echo esc_url( home_url( '/' ) ); ?>">
       <img class="lp-header__logo-image" src="<?php echo esc_url( $lp_header_img_base . 'logo.png' ); ?>" alt="TABICO">
     </a>
     <nav class="lp-header__nav" aria-label="グローバルナビゲーション">

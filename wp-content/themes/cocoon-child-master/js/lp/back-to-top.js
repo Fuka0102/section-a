@@ -22,7 +22,17 @@
   );
 
   buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function (event) {
+      // hrefを持つリンク（例: ヘッダーロゴ）は、リンク先が今いるページと同じ場合のみ
+      // スムーズスクロールに置き換える。別ページへのリンクならそのまま遷移させる。
+      if (button.tagName === "A") {
+        var linkUrl = new URL(button.href, window.location.href);
+        if (linkUrl.pathname !== window.location.pathname) {
+          return;
+        }
+        event.preventDefault();
+      }
+
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
