@@ -578,6 +578,7 @@ ol {
   .lp-problem__balloon--1 .lp-problem__balloon-text::after {
     right: -30px;
     top: 20px;
+    z-index: -1;
     width: 86px;
     height: 66px;
     border: none;
