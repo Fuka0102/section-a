@@ -130,6 +130,7 @@ ol {
   gap: 16px;
   padding: 16px 20px;
   background-color: rgba(1, 161, 205, 0.4);
+  opacity: 0.9;
   transform: translateY(100%);
   transition: transform 0.3s ease;
 }
@@ -141,6 +142,22 @@ ol {
 
 .lp-sp-bar.is-visible {
   transform: translateY(0);
+}
+
+.lp-sp-bar__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.lp-sp-bar__logo-image {
+  display: block;
+  width: 62px;
+  height: auto;
 }
 
 .lp-sp-bar__link {
