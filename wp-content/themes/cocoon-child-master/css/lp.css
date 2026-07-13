@@ -1054,7 +1054,7 @@ ol {
   .lp-steps__list {
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
   }
 }
 
